@@ -1,0 +1,18 @@
+export { default as Dashboard } from './dashboard/dashboard';
+export { default as Home } from './home/home';
+export { default as Login} from './login/login';
+export { default as Homepages } from './home/homepages';
+export { default as Signup  } from './signup/signup';
+export { default as News } from './news/news';
+export { default as Bracelet} from './productinformation/bracelet';
+export { default as Contact } from './contactshop/contact';
+export { default as Agency } from './agency/agency';
+export { default as Seemore } from './seemore/seemore';
+export { default as Necklace} from './productinformation/necklace';
+export { default as Earring} from './productinformation/earring';
+export { default as Promotional} from './productinformation/promotional';
+export { default as introduce } from './introduce/introduce';
+export { default as Weddingring} from './productinformation/weddingring';
+export { default as Samplearticle } from './samplearticle/samplearticle';
+export { default as Samplearticle2 } from './samplearticle/samplearticle2';
+export { default as Samplearticle3 } from './samplearticle/samplearticle3';
