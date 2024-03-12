@@ -1,41 +1,107 @@
+/* eslint-disable no-unused-vars */
 import { Tabs, Tab, Card, CardBody, Image, Button } from '@nextui-org/react';
-import React from 'react';
-import './seemore.css'
+import React, { useEffect, useState } from 'react';
+import './seemore.css';
+import moment from 'moment';
+import ReactImageMagnify from 'react-image-magnify';
+
 function Seemore() {
     const [showModal, setShowModal] = React.useState(false);
     const [showModal3, setShowModal3] = React.useState(false);
     const [showModal2, setShowModal2] = React.useState(false);
 
+    //chuyenanh//
+    const [mainImage, setMainImage] = useState('/src/assets/rank2/nhanngoctrai.jpg');
+
+    const handleThumbnailClick = (imageSrc) => {
+        setMainImage(imageSrc);
+    };
+
+    //binhluan//
+    const [comments, setComments] = useState({});
+    const [newComment, setNewComment] = useState('');
+
+    useEffect(() => {
+        const storedComments = localStorage.getItem('comments');
+        if (storedComments) {
+            setComments(JSON.parse(storedComments));
+        }
+    }, []);
+
+    const handleAddComment = () => {
+        if (newComment.trim() !== '') {
+            const formattedComment = {
+                id: Date.now().toString(),
+                text: newComment,
+                timestamp: moment().format('MMMM Do YYYY, h:mm:ss a'),
+            };
+            const updatedComments = { ...comments, [formattedComment.id]: formattedComment };
+            setComments(updatedComments);
+            localStorage.setItem('comments', JSON.stringify(updatedComments));
+            setNewComment('');
+        }
+    };
+
+    const handleDeleteComment = (id) => {
+        const { [id]: deletedComment, ...remainingComments } = comments;
+        setComments(remainingComments);
+        localStorage.setItem('comments', JSON.stringify(remainingComments));
+    };
     return (
         <div>
             <spanBody className="flex-col">
                 <span className="flex justify-center gap-7 mt-10">
-                    <span>
-                        <img
-                            src="/src/assets/rank2/nhanngoctrai.jpg"
-                            alt=""
-                            style={{ width: '355px', height: '350px' }}
-                        />
-                        <span className="flex gap-3 mt-3 ">
+                    <span >
+                            <ReactImageMagnify 
+                                {...{
+                                    smallImage: {
+                                        alt: '',
+                                        isFluidWidth: false,
+                                        src: mainImage,
+                                        width: 360, // Độ rộng mong muốn của ảnh nhỏ
+                                        height: 360,
+                                    },
+                                    largeImage: {
+                                        src: mainImage,
+                                        width:500, // Kích thước của ảnh lớn khi zoom
+                                        height: 1000,
+                                    },
+                                    lensStyle: { backgroundColor: 'rgba(0,0,0,.6)' },
+                                }}
+                            />
+
+                        <span className="flex gap-3 mt-3">
                             <img
                                 src="/src/assets/rank2/nhanngoctrai.jpg"
                                 alt=""
                                 className="w-20 h-20"
+                                onClick={() =>
+                                    handleThumbnailClick('/src/assets/rank2/nhanngoctrai.jpg')
+                                }
                             />
                             <img
                                 src="/src/assets/rank2/nhanvang.jpg"
                                 alt=""
                                 className="w-20 h-20"
+                                onClick={() =>
+                                    handleThumbnailClick('/src/assets/rank2/nhanvang.jpg')
+                                }
                             />
                             <img
                                 src="/src/assets/rank2/nhantinhnhan.jpg"
                                 alt=""
                                 className="w-20 h-20"
+                                onClick={() =>
+                                    handleThumbnailClick('/src/assets/rank2/nhantinhnhan.jpg')
+                                }
                             />
                             <img
                                 src="/src/assets/rank3/vongtinhnhan.jpg"
                                 alt=""
                                 className="w-20 h-20"
+                                onClick={() =>
+                                    handleThumbnailClick('/src/assets/rank3/vongtinhnhan.jpg')
+                                }
                             />
                         </span>
                     </span>
@@ -195,12 +261,81 @@ function Seemore() {
                             </Tab>
                             <Tab key="Đánh Gía" title="Đánh Giá">
                                 <Card>
-                                    <CardBody></CardBody>
+                                    <CardBody>
+                                        <div>
+                                            <h3>
+                                                Số lượt bình luận: {Object.keys(comments).length}
+                                            </h3>{' '}
+                                            {/* Hiển thị số lượt bình luận */}
+                                            <div>
+                                                {Object.values(comments).map((comment) => (
+                                                    <div
+                                                        key={comment.id}
+                                                        style={{
+                                                            display: 'flex',
+                                                            alignItems: 'center',
+                                                            margin: '10px',
+                                                        }}
+                                                    >
+                                                        <img
+                                                            src={`https://www.gravatar.com/avatar/${comment.id}?s=50&d=identicon`}
+                                                            alt={`Avatar ${comment.id}`}
+                                                            style={{
+                                                                borderRadius: '50%',
+                                                                width: '50px',
+                                                                height: '50px',
+                                                                marginRight: '10px',
+                                                            }}
+                                                        />
+                                                        <div>
+                                                            <p>{comment.text}</p>
+                                                            <small>{comment.timestamp}</small>
+                                                            <button
+                                                                className="flex justify-end font-semibold text-xs text-red-500"
+                                                                onClick={() =>
+                                                                    handleDeleteComment(comment.id)
+                                                                }
+                                                            >
+                                                                Xóa
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            <h1>
+                                                <hr />
+                                            </h1>
+                                            <h2 className="font-semibold mt-2">
+                                                Hãy Gửi Ý Kiến Cho Chúng Tôi
+                                            </h2>
+                                            <div className="flex gap-3 mt-3">
+                                                <input
+                                                    type="text"
+                                                    value={newComment}
+                                                    onChange={(e) => setNewComment(e.target.value)}
+                                                    placeholder="Hãy gửi cho tôi ý kiến"
+                                                    style={{
+                                                        border: '1px solid black',
+                                                        borderRadius: '5px',
+                                                        padding: '5px',
+                                                    }}
+                                                />
+                                                <Button
+                                                    className="font-semibold bg-blue-300"
+                                                    onClick={handleAddComment}
+                                                >
+                                                    Gửi
+                                                </Button>
+                                            </div>
+                                        </div>
+                                    </CardBody>
                                 </Card>
                             </Tab>
                         </Tabs>
                         <spanCard>
-                            <h1 className="flex justify-center text-2xl font-semibold  mt-7">SẢN PHẨM LIÊN QUAN </h1>
+                            <h1 className="flex justify-center text-2xl font-semibold  mt-7">
+                                SẢN PHẨM LIÊN QUAN{' '}
+                            </h1>
                             <div className="flex gap-7 mt-5">
                                 <div>
                                     <Image
@@ -521,31 +656,34 @@ function Seemore() {
                             </div>
                         </spanCard>
                     </spanCard>
-                   <spanLeft className= "w-72 h-56  bg-slate-50 justify-items-center border-solid flex-col spanLeftSticky " >
+                    <spanLeft className="w-72 h-64  bg-slate-50 justify-items-center border-solid flex-col spanLeftSticky ">
                         <span>
-                            <h1 className="ml-10 text-xl mt-4 font-semibold">Nhẫn Vàng Đặc Biệt</h1>
+                            <h1 className="ml-10 text-xl mt-4 font-semibold">
+                                Nhẫn Ngọc Trai Đặc Biệt
+                            </h1>
                             <h1 className="ml-10 font-thin">Tình trạng: Hết hàng</h1>
                             <span>
-                            <h1 className="ml-10 font-thin">500.000đ</h1>
-                           <Button className='bg-red-500 text-white ml-10 text-xl font-semibold mt-3'> Mua Ngay</Button>
-                        </span>
+                                <h1 className="ml-10 font-thin">500.000đ</h1>
+                                <Button className="bg-red-500 text-white ml-10 text-xl font-semibold mt-3">
+                                    {' '}
+                                    <a href="/contact">Liên Hệ</a>
+                                </Button>
+                            </span>
                         </span>
 
-                       
-                        <spanSmatphon >
-                        <span className="flex ml-10 gap-1 mt-3">
-                            <h1>hoặc gọi ngay</h1>
-                            <a href="" className="text-red-500">
-                                {' '}
-                                1900 6750
-                            </a>
-                            <h1>để tư</h1>
-                        </span>
-                        <span>
-                            <h1 className="ml-10">vấn miễn phí</h1>
-                        </span>
+                        <spanSmatphon>
+                            <span className="flex ml-10 gap-1 mt-3">
+                                <h1>hoặc gọi ngay</h1>
+                                <a href="" className="text-red-500">
+                                    {' '}
+                                    1900 6750
+                                </a>
+                                <h1>để tư</h1>
+                            </span>
+                            <span>
+                                <h1 className="ml-10">vấn miễn phí</h1>
+                            </span>
                         </spanSmatphon>
-                       
                     </spanLeft>
                 </spanCategory>
             </spanBody>

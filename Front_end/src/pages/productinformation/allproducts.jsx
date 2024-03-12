@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import { Card as NextUICard, Image, Slider } from '@nextui-org/react';
 import React from 'react';
@@ -15,72 +16,146 @@ import { Input } from '@nextui-org/react';
 import { useState } from 'react';
 
 
-function Bracelet() {
+function Allproducts() {
     const data = [
         {
             id: 1,
-            productName: 'Vòng Tay Bạch Kim',
-            price: 500000,
+            productName: 'Nhẫn Ngọc Trai',
+            price: 'liên hệ', // Changed from 999999 to "Liên hệ"
         },
         {
             id: 2,
-            productName: 'Vòng Tay Tình Nhân',
-            price: 999000,
+            productName: 'Nhẫn Vàng Đặc Biệt',
+            price: 400000,
             
         },
         {
             id: 3,
-            productName: 'Vòng Basic',
-            price: 700000,
+            productName: 'Nhẫn Tình Nhân',
+            price: 900000,
         },
     ];
     const data1 = [
         {
             id: 4,
-            productName: 'Vòng Cổ Đá Xanh',
-            price: 300000,
+            productName: 'Nhẫn Gắn Kim Cương',
+            price: 100000,
         },
         {
             id: 5,
-            productName: 'Bông Tai Ngọc Trai',
+            productName: 'Vòng Tay Bạch Kim ',
             price: 500000,
         },
         {
             id: 6,
-            productName: 'Bông Tai Cao Cấp',
-            price: 400000,
+            productName: 'Vòng Tay Tình Nhân',
+            price: 900000,
         },
     ];
     const data2 = [
         {
-            id: 7,
-            productName: 'Nhẫn Tình Yêu',
-            price: 900000,
-        },
-        {
             id: 8,
-            productName: 'Nhẫn Gắn Kim Cương Cao Cấp',
-            price: 100000,
-            
+            productName: 'Bông Tai Phá Cách',
+            price: 350000,
         },
         {
             id: 9,
-            productName: 'Nhẫn Vàng Cao Cấp',
-            price: 400000,
+            productName: 'Vòng Basic',
+            price: 700000,
+            
+        },
+        {
+            id: 10,
+            productName: 'Vòng Cổ Đá Xanh',
+            price: 300000,
         },
     
     ];
     const data3 = [
         {
-            id: 7,
-            productName: 'Vòng Tay Cao Cấp ',
-            price: 500000,
+            id: 11,
+            productName: 'Dây Chuyền Số 8',
+            price: 600000,
         },
+        {
+            id: 12,
+            productName: 'Chìa Khóa Tình Yêu',
+            price: 450000,
+            
+        },
+        {
+            id: 13,
+            productName: 'Nhẫn Đôi Kim Cương',
+            price: 800000,
+        },
+    
+    ];
+    const data4 = [
+      
+        {
+            id: 14,
+            productName: 'Bông Tai Ngọc Trai',
+            price: 500000,
+            
+        },
+        {
+            id: 15,
+            productName: 'Bông Tai Cao Cấp ',
+            price: 400000,
+        },{
+            id: 16,
+            productName: 'Nhẫn Tình Yêus',
+            price: 900000,
+            
+        },
+        
+      
+    ];
+    const data5 = [
+      
+        {
+            id: 17,
+            productName: 'Nhẫn Gắn Kim Cương Cao Cấp ',
+            price: 100000,
+            
+        },
+        {
+            id: 18,
+            productName: 'Nhẫn Vàng Cao Cấp',
+            price: 400000,
+        },{
+            id: 19,
+            productName: 'Vòng Tay Cao Cấp',
+            price: 500000,
+            
+        },
+        
+      
+    ];
+    const data6 = [
+      
+        {
+            id: 1,
+            productName: 'Nhẫn Ngọc Trai Cao Cấp',
+            price: 'liên hệ', // Changed from 999999 to "Liên hệ"
+        },
+        {
+            id: 2,
+            productName: 'Bông Tai Biz',
+            price: 350000,
+            
+        },
+        {
+            id: 3,
+            productName: 'Nhẫn Vòng ADV',
+            price: 700000,
+        },
+        
       
     ];
     const [showModal, setShowModal] = React.useState(false);
-    const [showModal3, setShowModal3] = React.useState(false);
     const [showModal2, setShowModal2] = React.useState(false);
+    const [showModal3, setShowModal3] = React.useState(false);
     const [showModal4, setShowModal4] = React.useState(false);
     const [showModal5, setShowModal5] = React.useState(false);
     const [showModal6, setShowModal6] = React.useState(false);
@@ -88,6 +163,17 @@ function Bracelet() {
     const [showModal8, setShowModal8] = React.useState(false);
     const [showModal9, setShowModal9] = React.useState(false);
     const [showModal10, setShowModal10] = React.useState(false);
+    const [showModal11, setShowModal11] = React.useState(false);
+    const [showModal12, setShowModal12] = React.useState(false);
+    const [showModal13, setShowModal13] = React.useState(false);
+    const [showModal14, setShowModal14] = React.useState(false);
+    const [showModal15, setShowModal15] = React.useState(false);
+    const [showModal16, setShowModal16] = React.useState(false);
+    const [showModal17, setShowModal17] = React.useState(false);
+    const [showModal18, setShowModal18] = React.useState(false);
+    const [showModal19, setShowModal19] = React.useState(false);
+    const [showModal20, setShowModal20] = React.useState(false);
+    const [showModal21, setShowModal21] = React.useState(false);
     const [selectedColor, setSelectedColor] = useState(null);
 
     const handleColorSelection = (color) => {
@@ -156,7 +242,7 @@ function Bracelet() {
                     </div>
                     <spanCategory>
                         <span>
-                        <h1 className="text-xl font-semibold mt-10">Danh mục</h1>
+                            <h1 className="text-xl font-semibold mt-10">Danh mục</h1>
                             <h1 className="mt-2">
                                 <a href="/vòngtay">vòng tay(10)</a>
                             </h1>
@@ -461,8 +547,8 @@ function Bracelet() {
                 <spanLeft>
                     <div className="flex gap-60">
                         <span className=" flex ">
-                            <h1 className="text-xl font-semibold">vòng đeo tay</h1>
-                            <h1 className="text-sm mt-3">(10 sản phẩm)</h1>
+                            <h1 className="text-xl font-semibold">Bông Tai</h1>
+                            <h1 className="text-sm mt-3">(21 sản phẩm)</h1>
                         </span>
                         <span className="">
                             <h1>sắp xế theo</h1>
@@ -482,7 +568,7 @@ function Bracelet() {
                                     radius="none"
                                     width={240}
                                     alt="NextUI Fruit Image with Zoom"
-                                    src="/src/assets/rank3/vongbachkim.jpg  "
+                                    src="/src/assets/rank2/nhanngoctrai.jpg  "
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
@@ -496,7 +582,7 @@ function Bracelet() {
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
                                                         <h3 className="text-3xl font-semibold">
-                                                            Vòng tay bạch kim
+                                                            Nhẫn Ngọc Trai 
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -511,7 +597,7 @@ function Bracelet() {
                                                     <div className="relative p-6 flex justify-center gap-3">
                                                         <span>
                                                             <img
-                                                                src="https://bizweb.dktcdn.net/100/260/640/products/64.jpg?v=1506482542493 "
+                                                                src="/src/assets/rank2/nhanngoctrai.jpg"
                                                                 alt=""
                                                                 style={{
                                                                     width: '250px',
@@ -525,9 +611,9 @@ function Bracelet() {
                                                                 Mã SP: Chưa cập nhật | Thương hiệu:
                                                                 Ngân Hoàng
                                                             </h1>
-                                                            <h1 className="text-red-500 text-xl font-semibold">
-                                                                500.000₫{' '}
-                                                            </h1>
+                                                            <a href='/contact' className="text-red-500 text-xl font-semibold">
+                                                                Liên Hệ{' '}
+                                                            </a>
                                                             <h1 style={{ width: '450px' }}>
                                                                 Sterling silver (hợp kim bạc 925) là
                                                                 loại hợp kim sáng nhất. Bạc tinh
@@ -573,7 +659,7 @@ function Bracelet() {
                                     isZoomed
                                     width={240}
                                     alt="NextUI Fruit Image with Zoom"
-                                    src="/src/assets/rank3/vongtinhnhan.jpg "
+                                    src="/src/assets/rank2/nhanvang.jpg "
                                     className="w-60 h-60  drop-shadow-2xl"
                                 />
                             </NextUICard>
@@ -587,11 +673,11 @@ function Bracelet() {
                                                     {/*header*/}
                                                     <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
                                                         <h3 className="text-3xl font-semibold">
-                                                            Vòng Tay Tình Nhân
+                                                            Nhẫn Vàng Đặc Biệt
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                                                            onClick={() => setShowModal(false)}
+                                                            onClick={() => setShowModal2(false)}
                                                         >
                                                             <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                                                                 ×
@@ -602,7 +688,7 @@ function Bracelet() {
                                                     <div className="relative p-6 flex justify-center gap-3">
                                                         <span>
                                                             <img
-                                                                src="/src/assets/rank3/vongtinhnhan.jpg "
+                                                                src="/src/assets/rank2/nhanvang.jpg "
                                                                 alt=""
                                                                 style={{
                                                                     width: '250px',
@@ -663,7 +749,7 @@ function Bracelet() {
                                 isZoomed
                                 width={240}
                                 alt="NextUI Fruit Image with Zoom"
-                                src="/src/assets/rank6/vongbasic.jpg "
+                                src="/src/assets/rank2/nhantinhnhan.jpg "
                                 className="w-60 h-60  drop-shadow-2xl"
                             />
                             <>
@@ -676,7 +762,7 @@ function Bracelet() {
                                                     {/*header*/}
                                                     <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
                                                         <h3 className="text-3xl font-semibold">
-                                                            Modal Title3
+                                                           Nhẫn Tình Nhân
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -691,7 +777,7 @@ function Bracelet() {
                                                     <div className="relative p-6 flex justify-center gap-3">
                                                         <span>
                                                             <img
-                                                                src="/src/assets/rank6/vongbasic.jpg "
+                                                                src="/src/assets/rank2/nhantinhnhan.jpg"
                                                                 alt=""
                                                                 style={{
                                                                     width: '250px',
@@ -749,18 +835,26 @@ function Bracelet() {
                     </div>
                     <div className="flex justify-center gap-6 ">
                     {data &&
-                        data.map((prd) => (
-                            <Card
-                                key={prd.id}
-                                productName={prd.productName}
-                                price={`${prd.price.toLocaleString('vi-VN')}đ`}
-                                discountedPrice={
-                                    prd.discountedPrice
-                                        ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
-                                        : null
-                                }
-                            />
-                        ))}
+    data.map((prd) => (
+        <Card
+        key={prd.id}
+        productName={prd.productName}
+        price={
+            prd.price === 'liên hệ' ? (
+                <a href="/contact">{prd.price}</a>
+            ) : (
+                `${prd.price.toLocaleString('vi-VN')}đ`
+            )
+        }
+        discountedPrice={
+            prd.discountedPrice
+                ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
+                : null
+        }
+        addToCart={() => addToCart(prd.id)} // Chức năng thêm vào giỏ hàng
+        removeFromCart={() => removeFromCart(prd.id)} // Chức năng bỏ khỏi giỏ hàng
+    />
+))}
                     </div>
                     <div className="flex justify-center gap-6 mt-6  ">
                         <div>
@@ -772,7 +866,7 @@ function Bracelet() {
                                     radius="none"
                                     width={240}
                                     alt="NextUI Fruit Image with Zoom"
-                                    src="/src/assets/bracelet/vongcodaxanh.jpg "
+                                    src="/src/assets/rank2/nhangankimcuong.jpg "
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
@@ -786,7 +880,7 @@ function Bracelet() {
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
                                                         <h3 className="text-3xl font-semibold">
-                                                            Vòng tay bạch kim
+                                                            Nhẫn Gắn Kim Cuơng
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -801,7 +895,7 @@ function Bracelet() {
                                                     <div className="relative p-6 flex justify-center gap-3">
                                                         <span>
                                                             <img
-                                                                src="/src/assets/bracelet/vongcodaxanh.jpg "
+                                                                src="/src/assets/rank2/nhangankimcuong.jpg "
                                                                 alt=""
                                                                 style={{
                                                                     width: '250px',
@@ -863,7 +957,7 @@ function Bracelet() {
                                     radius="none"
                                     width={240}
                                     alt="NextUI Fruit Image with Zoom"
-                                    src="/src/assets/bracelet/bongtaingoctrai.jpg"
+                                    src="/src/assets/rank3/vongbachkim.jpg"
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
@@ -877,7 +971,7 @@ function Bracelet() {
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
                                                         <h3 className="text-3xl font-semibold">
-                                                            Bông Tai Ngọc Trai
+                                                            Vòng Bạch Kim
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -892,7 +986,7 @@ function Bracelet() {
                                                     <div className="relative p-6 flex justify-center gap-3">
                                                         <span>
                                                             <img
-                                                                src="/src/assets/bracelet/bongtaingoctrai.jpg"
+                                                                src="/src/assets/rank3/vongbachkim.jpg"
                                                                 alt=""
                                                                 style={{
                                                                     width: '250px',
@@ -954,7 +1048,7 @@ function Bracelet() {
                                     radius="none"
                                     width={240}
                                     alt="NextUI Fruit Image with Zoom"
-                                    src="/src/assets/rank2/bongtaicaocap.jpg  "
+                                    src="/src/assets/rank3/vongtinhnhan.jpg  "
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
@@ -968,7 +1062,7 @@ function Bracelet() {
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
                                                         <h3 className="text-3xl font-semibold">
-                                                            Bông Tai Cao Cấp
+                                                            Nhẫn Đôi Kim Cương
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -983,7 +1077,7 @@ function Bracelet() {
                                                     <div className="relative p-6 flex justify-center gap-3">
                                                         <span>
                                                             <img
-                                                                src="/src/assets/rank2/bongtaicaocap.jpg"
+                                                                src="/src/assets/rank3/vongtinhnhan.jpg"
                                                                 alt=""
                                                                 style={{
                                                                     width: '250px',
@@ -1063,7 +1157,7 @@ function Bracelet() {
                                     radius="none"
                                     width={240}
                                     alt="NextUI Fruit Image with Zoom"
-                                    src="/src/assets/rank2/nhantinhnhan.jpg  "
+                                    src="/src/assets/rank6/bongtaiphacach.jpg  "
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
@@ -1077,7 +1171,7 @@ function Bracelet() {
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
                                                         <h3 className="text-3xl font-semibold">
-                                                            Nhẫn Tình Yêu
+                                                            Bông Tai Phá Cách
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -1092,7 +1186,7 @@ function Bracelet() {
                                                     <div className="relative p-6 flex justify-center gap-3">
                                                         <span>
                                                             <img
-                                                                src="/src/assets/rank2/nhantinhnhan.jpg   "
+                                                                src="/src/assets/rank6/bongtaiphacach.jpg   "
                                                                 alt=""
                                                                 style={{
                                                                     width: '250px',
@@ -1154,7 +1248,7 @@ function Bracelet() {
                                     radius="none"
                                     width={240}
                                     alt="NextUI Fruit Image with Zoom"
-                                    src="/src/assets/rank2/nhangankimcuong.jpg"
+                                    src="/src/assets/rank3/nhanvongbasic.jpg"
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
@@ -1168,7 +1262,7 @@ function Bracelet() {
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
                                                         <h3 className="text-3xl font-semibold">
-                                                            Nhẫn Gắn Kim Cương Cao Cấp
+                                                           Vòng Basic
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -1183,7 +1277,7 @@ function Bracelet() {
                                                     <div className="relative p-6 flex justify-center gap-3">
                                                         <span>
                                                             <img
-                                                                src="/src/assets/rank2/nhangankimcuong.jpg "
+                                                                src="/src/assets/rank3/nhanvongbasic.jpg "
                                                                 alt=""
                                                                 style={{
                                                                     width: '250px',
@@ -1245,7 +1339,7 @@ function Bracelet() {
                                     radius="none"
                                     width={240}
                                     alt="NextUI Fruit Image with Zoom"
-                                    src="/src/assets/rank2/nhanvang.jpg  "
+                                    src="/src/assets/bracelet/vongcodaxanh.jpg  "
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
@@ -1259,7 +1353,7 @@ function Bracelet() {
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
                                                         <h3 className="text-3xl font-semibold">
-                                                            Nhẫn Vàng Cao Cấp
+                                                           Vòng Cổ Đá Xanh
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -1274,7 +1368,7 @@ function Bracelet() {
                                                     <div className="relative p-6 flex justify-center gap-3">
                                                         <span>
                                                             <img
-                                                                src="/src/assets/rank2/nhanvang.jpg "
+                                                                src="/src/assets/bracelet/vongcodaxanh.jpg "
                                                                 alt=""
                                                                 style={{
                                                                     width: '250px',
@@ -1346,19 +1440,20 @@ function Bracelet() {
                         ))}
                     </div>
                     
-                    <div className='w-60 h-60 mt-6 '>
-                    <NextUICard radius="none">
+                    <div className="flex justify-center gap-6 mt-6  ">
+                        <div>
+                        <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal10(true)}
                                     isZoomed
                                     radius="none"
                                     width={240}
                                     alt="NextUI Fruit Image with Zoom"
-                                    src="/src/assets/rank3/vongbachkim.jpg  "
-                                    className="w-60 h-60 drop-shadow-2xl "
+                                    src="/src/assets/rank6/daychuyenso8.jpg  "
+                                    className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                            <>
+                              <>
                                 {showModal10 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -1368,7 +1463,7 @@ function Bracelet() {
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
                                                         <h3 className="text-3xl font-semibold">
-                                                           Vòng Tay Cao Cấp
+                                                            Dây Chuyền Số 8
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -1383,7 +1478,7 @@ function Bracelet() {
                                                     <div className="relative p-6 flex justify-center gap-3">
                                                         <span>
                                                             <img
-                                                                src="/src/assets/rank3/vongbachkim.jpg "
+                                                                src="/src/assets/rank6/daychuyenso8.jpg   "
                                                                 alt=""
                                                                 style={{
                                                                     width: '250px',
@@ -1436,10 +1531,191 @@ function Bracelet() {
                                     </>
                                 ) : null}
                             </>
+                        </div>
+                        <div>
+                        <NextUICard radius="none">
+                                <Image
+                                    onClick={() => setShowModal11(true)}
+                                    isZoomed
+                                    radius="none"
+                                    width={240}
+                                    alt="NextUI Fruit Image with Zoom"
+                                    src="/src/assets/bracelet/chiakhoatinhyeu.jpg"
+                                    className="w-60 h-60  drop-shadow-2xl "
+                                />
+                            </NextUICard>
+                              <>
+                                {showModal11 ? (
+                                    <>
+                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                                                {/*content*/}
+                                                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                                    {/*header*/}
+                                                    <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
+                                                        <h3 className="text-3xl font-semibold">
+                                                            Chìa Khóa Tình Yêu
+                                                        </h3>
+                                                        <button
+                                                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                                            onClick={() => setShowModal11(false)}
+                                                        >
+                                                            <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                                                ×
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    {/*body*/}
+                                                    <div className="relative p-6 flex justify-center gap-3">
+                                                        <span>
+                                                            <img
+                                                                src="/src/assets/bracelet/chiakhoatinhyeu.jpg "
+                                                                alt=""
+                                                                style={{
+                                                                    width: '250px',
+                                                                    height: '250px',
+                                                                }}
+                                                            />
+                                                        </span>
 
+                                                        <span>
+                                                            <h1>
+                                                                Mã SP: Chưa cập nhật | Thương hiệu:
+                                                                Ngân Hoàng
+                                                            </h1>
+                                                            <h1 className="text-red-500 text-xl font-semibold">
+                                                                500.000₫{' '}
+                                                            </h1>
+                                                            <h1 style={{ width: '450px' }}>
+                                                                Sterling silver (hợp kim bạc 925) là
+                                                                loại hợp kim sáng nhất. Bạc tinh
+                                                                khiết quá mềm để làm đồ trang sức,
+                                                                vì vậy người ta thường pha hợp kim
+                                                                đồng hoặc các kim loại khác để làm
+                                                                cho nó đủ cứng và dễ tạo độ bóng.
+                                                                Trong những năm gần đây, việc pha
+                                                                kim loại khác còn nhằm tác...{' '}
+                                                            </h1>
+                                                        </span>
+                                                    </div>
+                                                    {/*footer*/}
+                                                    <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                                                        <button
+                                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal11(false)}
+                                                        >
+                                                            Close
+                                                        </button>
+                                                        <button
+                                                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal11(false)}
+                                                        >
+                                                            Thêm Vào Giỏ Hàng
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                                    </>
+                                ) : null}
+                            </>
+                        </div>
+                        <div>
+                        <NextUICard radius="none">
+                                <Image
+                                    onClick={() => setShowModal12(true)}
+                                    isZoomed
+                                    radius="none"
+                                    width={240}
+                                    alt="NextUI Fruit Image with Zoom"
+                                    src="/src/assets/bracelet/nhandoikimcuong.jpg"
+                                    className="w-60 h-60  drop-shadow-2xl "
+                                />
+                            </NextUICard>
+                              <>
+                                {showModal12 ? (
+                                    <>
+                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                                                {/*content*/}
+                                                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                                    {/*header*/}
+                                                    <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
+                                                        <h3 className="text-3xl font-semibold">
+                                                          Nhẫn Đôi Kim Cuơng
+                                                        </h3>
+                                                        <button
+                                                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                                            onClick={() => setShowModal12(false)}
+                                                        >
+                                                            <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                                                ×
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    {/*body*/}
+                                                    <div className="relative p-6 flex justify-center gap-3">
+                                                        <span>
+                                                            <img
+                                                                src="/src/assets/bracelet/nhandoikimcuong.jpg "
+                                                                alt=""
+                                                                style={{
+                                                                    width: '250px',
+                                                                    height: '250px',
+                                                                }}
+                                                            />
+                                                        </span>
 
+                                                        <span>
+                                                            <h1>
+                                                                Mã SP: Chưa cập nhật | Thương hiệu:
+                                                                Ngân Hoàng
+                                                            </h1>
+                                                            <h1 className="text-red-500 text-xl font-semibold">
+                                                                500.000₫{' '}
+                                                            </h1>
+                                                            <h1 style={{ width: '450px' }}>
+                                                                Sterling silver (hợp kim bạc 925) là
+                                                                loại hợp kim sáng nhất. Bạc tinh
+                                                                khiết quá mềm để làm đồ trang sức,
+                                                                vì vậy người ta thường pha hợp kim
+                                                                đồng hoặc các kim loại khác để làm
+                                                                cho nó đủ cứng và dễ tạo độ bóng.
+                                                                Trong những năm gần đây, việc pha
+                                                                kim loại khác còn nhằm tác...{' '}
+                                                            </h1>
+                                                        </span>
+                                                    </div>
+                                                    {/*footer*/}
+                                                    <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                                                        <button
+                                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal12(false)}
+                                                        >
+                                                            Close
+                                                        </button>
+                                                        <button
+                                                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal12(false)}
+                                                        >
+                                                            Thêm Vào Giỏ Hàng
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                                    </>
+                                ) : null}
+                            </>
+                        </div>
                     </div>
-                    <div className="flex w-60 h-60 gap-6 ">
+                    <div className="flex justify-center gap-6 ">
                     {data3 &&
                         data3.map((prd) => (
                             <Card
@@ -1454,10 +1730,891 @@ function Bracelet() {
                             />
                         ))}
                     </div>
+
+                    <div className="flex justify-center gap-6 mt-6  ">
+                        <div>
+                        <NextUICard radius="none">
+                                <Image
+                                    onClick={() => setShowModal13(true)}
+                                    isZoomed
+                                    radius="none"
+                                    width={240}
+                                    alt="NextUI Fruit Image with Zoom"
+                                    src="/src/assets/rank5/bongtai.jpg  "
+                                    className="w-60 h-60  drop-shadow-2xl "
+                                />
+                            </NextUICard>
+                              <>
+                                {showModal13 ? (
+                                    <>
+                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                                                {/*content*/}
+                                                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                                    {/*header*/}
+                                                    <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
+                                                        <h3 className="text-3xl font-semibold">
+                                                            Bông Tai Ngọc Trai
+                                                        </h3>
+                                                        <button
+                                                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                                            onClick={() => setShowModal13(false)}
+                                                        >
+                                                            <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                                                ×
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    {/*body*/}
+                                                    <div className="relative p-6 flex justify-center gap-3">
+                                                        <span>
+                                                            <img
+                                                                src="/src/assets/rank5/bongtai.jpg   "
+                                                                alt=""
+                                                                style={{
+                                                                    width: '250px',
+                                                                    height: '250px',
+                                                                }}
+                                                            />
+                                                        </span>
+
+                                                        <span>
+                                                            <h1>
+                                                                Mã SP: Chưa cập nhật | Thương hiệu:
+                                                                Ngân Hoàng
+                                                            </h1>
+                                                            <h1 className="text-red-500 text-xl font-semibold">
+                                                                500.000₫{' '}
+                                                            </h1>
+                                                            <h1 style={{ width: '450px' }}>
+                                                                Sterling silver (hợp kim bạc 925) là
+                                                                loại hợp kim sáng nhất. Bạc tinh
+                                                                khiết quá mềm để làm đồ trang sức,
+                                                                vì vậy người ta thường pha hợp kim
+                                                                đồng hoặc các kim loại khác để làm
+                                                                cho nó đủ cứng và dễ tạo độ bóng.
+                                                                Trong những năm gần đây, việc pha
+                                                                kim loại khác còn nhằm tác...{' '}
+                                                            </h1>
+                                                        </span>
+                                                    </div>
+                                                    {/*footer*/}
+                                                    <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                                                        <button
+                                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal13(false)}
+                                                        >
+                                                            Close
+                                                        </button>
+                                                        <button
+                                                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal13(false)}
+                                                        >
+                                                            Thêm Vào Giỏ Hàng
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                                    </>
+                                ) : null}
+                            </>
+                        </div>
+                        <div>
+                        <NextUICard radius="none">
+                                <Image
+                                    onClick={() => setShowModal14(true)}
+                                    isZoomed
+                                    radius="none"
+                                    width={240}
+                                    alt="NextUI Fruit Image with Zoom"
+                                    src="/src/assets/rank2/bongtaicaocap.jpg"
+                                    className="w-60 h-60  drop-shadow-2xl "
+                                />
+                            </NextUICard>
+                              <>
+                                {showModal14 ? (
+                                    <>
+                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                                                {/*content*/}
+                                                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                                    {/*header*/}
+                                                    <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
+                                                        <h3 className="text-3xl font-semibold">
+                                                            Bông Tai Cao Cấp
+                                                        </h3>
+                                                        <button
+                                                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                                            onClick={() => setShowModal14(false)}
+                                                        >
+                                                            <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                                                ×
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    {/*body*/}
+                                                    <div className="relative p-6 flex justify-center gap-3">
+                                                        <span>
+                                                            <img
+                                                                src="/src/assets/rank2/bongtaicaocap.jpg "
+                                                                alt=""
+                                                                style={{
+                                                                    width: '250px',
+                                                                    height: '250px',
+                                                                }}
+                                                            />
+                                                        </span>
+
+                                                        <span>
+                                                            <h1>
+                                                                Mã SP: Chưa cập nhật | Thương hiệu:
+                                                                Ngân Hoàng
+                                                            </h1>
+                                                            <h1 className="text-red-500 text-xl font-semibold">
+                                                                500.000₫{' '}
+                                                            </h1>
+                                                            <h1 style={{ width: '450px' }}>
+                                                                Sterling silver (hợp kim bạc 925) là
+                                                                loại hợp kim sáng nhất. Bạc tinh
+                                                                khiết quá mềm để làm đồ trang sức,
+                                                                vì vậy người ta thường pha hợp kim
+                                                                đồng hoặc các kim loại khác để làm
+                                                                cho nó đủ cứng và dễ tạo độ bóng.
+                                                                Trong những năm gần đây, việc pha
+                                                                kim loại khác còn nhằm tác...{' '}
+                                                            </h1>
+                                                        </span>
+                                                    </div>
+                                                    {/*footer*/}
+                                                    <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                                                        <button
+                                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal14(false)}
+                                                        >
+                                                            Close
+                                                        </button>
+                                                        <button
+                                                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal14(false)}
+                                                        >
+                                                            Thêm Vào Giỏ Hàng
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                                    </>
+                                ) : null}
+                            </>
+                        </div>
+                        <div>
+                        <NextUICard radius="none">
+                                <Image
+                                    onClick={() => setShowModal15(true)}
+                                    isZoomed
+                                    radius="none"
+                                    width={240}
+                                    alt="NextUI Fruit Image with Zoom"
+                                    src="/src/assets/rank2/nhantinhnhan.jpg"
+                                    className="w-60 h-60  drop-shadow-2xl "
+                                />
+                            </NextUICard>
+                              <>
+                                {showModal15 ? (
+                                    <>
+                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                                                {/*content*/}
+                                                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                                    {/*header*/}
+                                                    <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
+                                                        <h3 className="text-3xl font-semibold">
+                                                           Nhẫn Tình Yêu
+                                                        </h3>
+                                                        <button
+                                                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                                            onClick={() => setShowModal15(false)}
+                                                        >
+                                                            <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                                                ×
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    {/*body*/}
+                                                    <div className="relative p-6 flex justify-center gap-3">
+                                                        <span>
+                                                            <img
+                                                                src="/src/assets/rank2/nhantinhnhan.jpg "
+                                                                alt=""
+                                                                style={{
+                                                                    width: '250px',
+                                                                    height: '250px',
+                                                                }}
+                                                            />
+                                                        </span>
+
+                                                        <span>
+                                                            <h1>
+                                                                Mã SP: Chưa cập nhật | Thương hiệu:
+                                                                Ngân Hoàng
+                                                            </h1>
+                                                            <h1 className="text-red-500 text-xl font-semibold">
+                                                                500.000₫{' '}
+                                                            </h1>
+                                                            <h1 style={{ width: '450px' }}>
+                                                                Sterling silver (hợp kim bạc 925) là
+                                                                loại hợp kim sáng nhất. Bạc tinh
+                                                                khiết quá mềm để làm đồ trang sức,
+                                                                vì vậy người ta thường pha hợp kim
+                                                                đồng hoặc các kim loại khác để làm
+                                                                cho nó đủ cứng và dễ tạo độ bóng.
+                                                                Trong những năm gần đây, việc pha
+                                                                kim loại khác còn nhằm tác...{' '}
+                                                            </h1>
+                                                        </span>
+                                                    </div>
+                                                    {/*footer*/}
+                                                    <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                                                        <button
+                                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal15(false)}
+                                                        >
+                                                            Close
+                                                        </button>
+                                                        <button
+                                                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal15(false)}
+                                                        >
+                                                            Thêm Vào Giỏ Hàng
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                                    </>
+                                ) : null}
+                            </>
+                        </div>
+                    </div>
+                    <div className="flex justify-center gap-6 ">
+                    {data4 &&
+                        data4.map((prd) => (
+                            <Card
+                                key={prd.id}
+                                productName={prd.productName}
+                                price={`${prd.price.toLocaleString('vi-VN')}đ`}
+                                discountedPrice={
+                                    prd.discountedPrice
+                                        ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
+                                        : null
+                                }
+                            />
+                        ))}
+                    </div>
+                    <div className="flex justify-center gap-6 mt-6  ">
+                        <div>
+                        <NextUICard radius="none">
+                                <Image
+                                    onClick={() => setShowModal16(true)}
+                                    isZoomed
+                                    radius="none"
+                                    width={240}
+                                    alt="NextUI Fruit Image with Zoom"
+                                    src="/src/assets/rank2/nhangankimcuong.jpg  "
+                                    className="w-60 h-60  drop-shadow-2xl "
+                                />
+                            </NextUICard>
+                              <>
+                                {showModal16 ? (
+                                    <>
+                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                                                {/*content*/}
+                                                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                                    {/*header*/}
+                                                    <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
+                                                        <h3 className="text-3xl font-semibold">
+                                                            Nhẫn Gắn Kim Cương Cao Cấp
+                                                        </h3>
+                                                        <button
+                                                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                                            onClick={() => setShowModal16(false)}
+                                                        >
+                                                            <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                                                ×
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    {/*body*/}
+                                                    <div className="relative p-6 flex justify-center gap-3">
+                                                        <span>
+                                                            <img
+                                                                src="/src/assets/rank2/nhangankimcuong.jpg   "
+                                                                alt=""
+                                                                style={{
+                                                                    width: '250px',
+                                                                    height: '250px',
+                                                                }}
+                                                            />
+                                                        </span>
+
+                                                        <span>
+                                                            <h1>
+                                                                Mã SP: Chưa cập nhật | Thương hiệu:
+                                                                Ngân Hoàng
+                                                            </h1>
+                                                            <h1 className="text-red-500 text-xl font-semibold">
+                                                                500.000₫{' '}
+                                                            </h1>
+                                                            <h1 style={{ width: '450px' }}>
+                                                                Sterling silver (hợp kim bạc 925) là
+                                                                loại hợp kim sáng nhất. Bạc tinh
+                                                                khiết quá mềm để làm đồ trang sức,
+                                                                vì vậy người ta thường pha hợp kim
+                                                                đồng hoặc các kim loại khác để làm
+                                                                cho nó đủ cứng và dễ tạo độ bóng.
+                                                                Trong những năm gần đây, việc pha
+                                                                kim loại khác còn nhằm tác...{' '}
+                                                            </h1>
+                                                        </span>
+                                                    </div>
+                                                    {/*footer*/}
+                                                    <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                                                        <button
+                                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal16(false)}
+                                                        >
+                                                            Close
+                                                        </button>
+                                                        <button
+                                                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal16(false)}
+                                                        >
+                                                            Thêm Vào Giỏ Hàng
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                                    </>
+                                ) : null}
+                            </>
+                        </div>
+                        <div>
+                        <NextUICard radius="none">
+                                <Image
+                                    onClick={() => setShowModal17(true)}
+                                    isZoomed
+                                    radius="none"
+                                    width={240}
+                                    alt="NextUI Fruit Image with Zoom"
+                                    src="/src/assets/rank2/nhanvang.jpg"
+                                    className="w-60 h-60  drop-shadow-2xl "
+                                />
+                            </NextUICard>
+                              <>
+                                {showModal17 ? (
+                                    <>
+                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                                                {/*content*/}
+                                                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                                    {/*header*/}
+                                                    <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
+                                                        <h3 className="text-3xl font-semibold">
+                                                            Nhẫn Vàng
+                                                        </h3>
+                                                        <button
+                                                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                                            onClick={() => setShowModal17(false)}
+                                                        >
+                                                            <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                                                ×
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    {/*body*/}
+                                                    <div className="relative p-6 flex justify-center gap-3">
+                                                        <span>
+                                                            <img
+                                                                src="/src/assets/rank2/nhanvang.jpg "
+                                                                alt=""
+                                                                style={{
+                                                                    width: '250px',
+                                                                    height: '250px',
+                                                                }}
+                                                            />
+                                                        </span>
+
+                                                        <span>
+                                                            <h1>
+                                                                Mã SP: Chưa cập nhật | Thương hiệu:
+                                                                Ngân Hoàng
+                                                            </h1>
+                                                            <h1 className="text-red-500 text-xl font-semibold">
+                                                                500.000₫{' '}
+                                                            </h1>
+                                                            <h1 style={{ width: '450px' }}>
+                                                                Sterling silver (hợp kim bạc 925) là
+                                                                loại hợp kim sáng nhất. Bạc tinh
+                                                                khiết quá mềm để làm đồ trang sức,
+                                                                vì vậy người ta thường pha hợp kim
+                                                                đồng hoặc các kim loại khác để làm
+                                                                cho nó đủ cứng và dễ tạo độ bóng.
+                                                                Trong những năm gần đây, việc pha
+                                                                kim loại khác còn nhằm tác...{' '}
+                                                            </h1>
+                                                        </span>
+                                                    </div>
+                                                    {/*footer*/}
+                                                    <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                                                        <button
+                                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal17(false)}
+                                                        >
+                                                            Close
+                                                        </button>
+                                                        <button
+                                                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal17(false)}
+                                                        >
+                                                            Thêm Vào Giỏ Hàng
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                                    </>
+                                ) : null}
+                            </>
+                        </div>
+                        <div>
+                        <NextUICard radius="none">
+                                <Image
+                                    onClick={() => setShowModal18(true)}
+                                    isZoomed
+                                    radius="none"
+                                    width={240}
+                                    alt="NextUI Fruit Image with Zoom"
+                                    src="/src/assets/rank3/vongbachkim.jpg"
+                                    className="w-60 h-60  drop-shadow-2xl "
+                                />
+                            </NextUICard>
+                              <>
+                                {showModal18 ? (
+                                    <>
+                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                                                {/*content*/}
+                                                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                                    {/*header*/}
+                                                    <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
+                                                        <h3 className="text-3xl font-semibold">
+                                                           Vòng Bạch Kim
+                                                        </h3>
+                                                        <button
+                                                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                                            onClick={() => setShowModal18(false)}
+                                                        >
+                                                            <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                                                ×
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    {/*body*/}
+                                                    <div className="relative p-6 flex justify-center gap-3">
+                                                        <span>
+                                                            <img
+                                                                src="/src/assets/rank3/vongbachkim.jpg "
+                                                                alt=""
+                                                                style={{
+                                                                    width: '250px',
+                                                                    height: '250px',
+                                                                }}
+                                                            />
+                                                        </span>
+
+                                                        <span>
+                                                            <h1>
+                                                                Mã SP: Chưa cập nhật | Thương hiệu:
+                                                                Ngân Hoàng
+                                                            </h1>
+                                                            <h1 className="text-red-500 text-xl font-semibold">
+                                                                500.000₫{' '}
+                                                            </h1>
+                                                            <h1 style={{ width: '450px' }}>
+                                                                Sterling silver (hợp kim bạc 925) là
+                                                                loại hợp kim sáng nhất. Bạc tinh
+                                                                khiết quá mềm để làm đồ trang sức,
+                                                                vì vậy người ta thường pha hợp kim
+                                                                đồng hoặc các kim loại khác để làm
+                                                                cho nó đủ cứng và dễ tạo độ bóng.
+                                                                Trong những năm gần đây, việc pha
+                                                                kim loại khác còn nhằm tác...{' '}
+                                                            </h1>
+                                                        </span>
+                                                    </div>
+                                                    {/*footer*/}
+                                                    <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                                                        <button
+                                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal18(false)}
+                                                        >
+                                                            Close
+                                                        </button>
+                                                        <button
+                                                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal18(false)}
+                                                        >
+                                                            Thêm Vào Giỏ Hàng
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                                    </>
+                                ) : null}
+                            </>
+                        </div>
+                    </div>
+                    <div className="flex justify-center gap-6 ">
+                    {data5 &&
+                        data5.map((prd) => (
+                            <Card
+                                key={prd.id}
+                                productName={prd.productName}
+                                price={`${prd.price.toLocaleString('vi-VN')}đ`}
+                                discountedPrice={
+                                    prd.discountedPrice
+                                        ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
+                                        : null
+                                }
+                            />
+                        ))}
+                    </div>
+
+
+                    <div className="flex justify-center gap-6 mt-6  ">
+                        <div>
+                        <NextUICard radius="none">
+                                <Image
+                                    onClick={() => setShowModal19(true)}
+                                    isZoomed
+                                    radius="none"
+                                    width={240}
+                                    alt="NextUI Fruit Image with Zoom"
+                                    src="/src/assets/rank2/nhanngoctrai.jpg  "
+                                    className="w-60 h-60  drop-shadow-2xl "
+                                />
+                            </NextUICard>
+                              <>
+                                {showModal19 ? (
+                                    <>
+                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                                                {/*content*/}
+                                                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                                    {/*header*/}
+                                                    <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
+                                                        <h3 className="text-3xl font-semibold">
+                                                            Nhẫn Ngọc Trai
+                                                        </h3>
+                                                        <button
+                                                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                                            onClick={() => setShowModal19(false)}
+                                                        >
+                                                            <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                                                ×
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    {/*body*/}
+                                                    <div className="relative p-6 flex justify-center gap-3">
+                                                        <span>
+                                                            <img
+                                                                src="/src/assets/rank2/nhanngoctrai.jpg   "
+                                                                alt=""
+                                                                style={{
+                                                                    width: '250px',
+                                                                    height: '250px',
+                                                                }}
+                                                            />
+                                                        </span>
+
+                                                        <span>
+                                                            <h1>
+                                                                Mã SP: Chưa cập nhật | Thương hiệu:
+                                                                Ngân Hoàng
+                                                            </h1>
+                                                            <h1 className="text-red-500 text-xl font-semibold">
+                                                                500.000₫{' '}
+                                                            </h1>
+                                                            <h1 style={{ width: '450px' }}>
+                                                                Sterling silver (hợp kim bạc 925) là
+                                                                loại hợp kim sáng nhất. Bạc tinh
+                                                                khiết quá mềm để làm đồ trang sức,
+                                                                vì vậy người ta thường pha hợp kim
+                                                                đồng hoặc các kim loại khác để làm
+                                                                cho nó đủ cứng và dễ tạo độ bóng.
+                                                                Trong những năm gần đây, việc pha
+                                                                kim loại khác còn nhằm tác...{' '}
+                                                            </h1>
+                                                        </span>
+                                                    </div>
+                                                    {/*footer*/}
+                                                    <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                                                        <button
+                                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal19(false)}
+                                                        >
+                                                            Close
+                                                        </button>
+                                                        <button
+                                                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal19(false)}
+                                                        >
+                                                            Thêm Vào Giỏ Hàng
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                                    </>
+                                ) : null}
+                            </>
+                        </div>
+                        <div>
+                        <NextUICard radius="none">
+                                <Image
+                                    onClick={() => setShowModal20(true)}
+                                    isZoomed
+                                    radius="none"
+                                    width={240}
+                                    alt="NextUI Fruit Image with Zoom"
+                                    src="/src/assets/rank5/bongtai.jpg"
+                                    className="w-60 h-60  drop-shadow-2xl "
+                                />
+                            </NextUICard>
+                              <>
+                                {showModal20 ? (
+                                    <>
+                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                                                {/*content*/}
+                                                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                                    {/*header*/}
+                                                    <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
+                                                        <h3 className="text-3xl font-semibold">
+                                                            Bông Tai Cao Cấp BIZ
+                                                        </h3>
+                                                        <button
+                                                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                                            onClick={() => setShowModal20(false)}
+                                                        >
+                                                            <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                                                ×
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    {/*body*/}
+                                                    <div className="relative p-6 flex justify-center gap-3">
+                                                        <span>
+                                                            <img
+                                                                src="/src/assets/rank5/bongtai.jpg "
+                                                                alt=""
+                                                                style={{
+                                                                    width: '250px',
+                                                                    height: '250px',
+                                                                }}
+                                                            />
+                                                        </span>
+
+                                                        <span>
+                                                            <h1>
+                                                                Mã SP: Chưa cập nhật | Thương hiệu:
+                                                                Ngân Hoàng
+                                                            </h1>
+                                                            <h1 className="text-red-500 text-xl font-semibold">
+                                                                500.000₫{' '}
+                                                            </h1>
+                                                            <h1 style={{ width: '450px' }}>
+                                                                Sterling silver (hợp kim bạc 925) là
+                                                                loại hợp kim sáng nhất. Bạc tinh
+                                                                khiết quá mềm để làm đồ trang sức,
+                                                                vì vậy người ta thường pha hợp kim
+                                                                đồng hoặc các kim loại khác để làm
+                                                                cho nó đủ cứng và dễ tạo độ bóng.
+                                                                Trong những năm gần đây, việc pha
+                                                                kim loại khác còn nhằm tác...{' '}
+                                                            </h1>
+                                                        </span>
+                                                    </div>
+                                                    {/*footer*/}
+                                                    <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                                                        <button
+                                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal20(false)}
+                                                        >
+                                                            Close
+                                                        </button>
+                                                        <button
+                                                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal20(false)}
+                                                        >
+                                                            Thêm Vào Giỏ Hàng
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                                    </>
+                                ) : null}
+                            </>
+                        </div>
+                        <div>
+                        <NextUICard radius="none">
+                                <Image
+                                    onClick={() => setShowModal21(true)}
+                                    isZoomed
+                                    radius="none"
+                                    width={240}
+                                    alt="NextUI Fruit Image with Zoom"
+                                    src="/src/assets/rank3/nhanvongbasic.jpg"
+                                    className="w-60 h-60  drop-shadow-2xl "
+                                />
+                            </NextUICard>
+                              <>
+                                {showModal21 ? (
+                                    <>
+                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                                                {/*content*/}
+                                                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                                    {/*header*/}
+                                                    <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
+                                                        <h3 className="text-3xl font-semibold">
+                                                           Nhẫn Vòng ADV
+                                                        </h3>
+                                                        <button
+                                                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                                            onClick={() => setShowModal21(false)}
+                                                        >
+                                                            <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                                                ×
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    {/*body*/}
+                                                    <div className="relative p-6 flex justify-center gap-3">
+                                                        <span>
+                                                            <img
+                                                                src="/src/assets/rank3/nhanvongbasic.jpg "
+                                                                alt=""
+                                                                style={{
+                                                                    width: '250px',
+                                                                    height: '250px',
+                                                                }}
+                                                            />
+                                                        </span>
+
+                                                        <span>
+                                                            <h1>
+                                                                Mã SP: Chưa cập nhật | Thương hiệu:
+                                                                Ngân Hoàng
+                                                            </h1>
+                                                            <h1 className="text-red-500 text-xl font-semibold">
+                                                                500.000₫{' '}
+                                                            </h1>
+                                                            <h1 style={{ width: '450px' }}>
+                                                                Sterling silver (hợp kim bạc 925) là
+                                                                loại hợp kim sáng nhất. Bạc tinh
+                                                                khiết quá mềm để làm đồ trang sức,
+                                                                vì vậy người ta thường pha hợp kim
+                                                                đồng hoặc các kim loại khác để làm
+                                                                cho nó đủ cứng và dễ tạo độ bóng.
+                                                                Trong những năm gần đây, việc pha
+                                                                kim loại khác còn nhằm tác...{' '}
+                                                            </h1>
+                                                        </span>
+                                                    </div>
+                                                    {/*footer*/}
+                                                    <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                                                        <button
+                                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal21(false)}
+                                                        >
+                                                            Close
+                                                        </button>
+                                                        <button
+                                                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal21(false)}
+                                                        >
+                                                            Thêm Vào Giỏ Hàng
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                                    </>
+                                ) : null}
+                            </>
+                        </div>
+                    </div>
+                    <div className="flex justify-center gap-6 ">
+                    {data6 &&
+        data6.map((prd) => (
+            <Card
+                key={prd.id}
+                productName={prd.productName}
+                price={
+                    prd.price === 'liên hệ' ? (
+                        <a href="/contact">{prd.price}</a>
+                    ) : (
+                        `${prd.price.toLocaleString('vi-VN')}đ`
+                    )
+                }
+                discountedPrice={
+                    prd.discountedPrice
+                        ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
+                        : null
+                }
+                addToCart={() => addToCart(prd.id)} // Chức năng thêm vào giỏ hàng
+                removeFromCart={() => removeFromCart(prd.id)} // Chức năng bỏ khỏi giỏ hàng
+            />
+        ))}
+                    </div>
                 </spanLeft>
             </spanBody>
         </div>
     );
 }
 
-export default Bracelet;
+export default Allproducts;

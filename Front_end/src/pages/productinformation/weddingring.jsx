@@ -1,4 +1,3 @@
-
 /* eslint-disable no-unused-vars */
 import { Card as NextUICard, Image, Slider } from '@nextui-org/react';
 import React from 'react';
@@ -14,7 +13,6 @@ import {
 import { Card } from '../../components/card/card';
 import { Input } from '@nextui-org/react';
 import { useState } from 'react';
-
 
 function Weddingring() {
     const data = [
@@ -61,16 +59,14 @@ function Weddingring() {
             id: 8,
             productName: 'Vòng Basic',
             price: 400000,
-            
         },
         {
             id: 9,
             productName: 'Vòng Cổ Đá Xanh',
             price: 900000,
         },
-    
     ];
-    
+
     const [showModal, setShowModal] = React.useState(false);
     const [showModal3, setShowModal3] = React.useState(false);
     const [showModal2, setShowModal2] = React.useState(false);
@@ -119,9 +115,9 @@ function Weddingring() {
     const handleClick4 = (index) => {
         setSelected(index === selected ? null : index);
     };
-    
+
     return (
-        <div className='px-5'>
+        <div className="px-5">
             <spanBody className="flex flex-col md:flex-row  justify-center  gap-10 mt-6">
                 <spanRaight>
                     <div className="flex rounded-lg  ">
@@ -150,16 +146,16 @@ function Weddingring() {
                         <span>
                             <h1 className="text-xl font-semibold mt-10">Danh mục</h1>
                             <h1 className="mt-2">
-                                <a href="">vòng tay(10)</a>
+                                <a href="/vòngtay">vòng tay(10)</a>
                             </h1>
                             <h1 className="mt-2">
-                                <a href="">dây chuyền(8)</a>
+                                <a href="/daychuyen">dây chuyền(8)</a>
                             </h1>
                             <h1 className="mt-2">
-                                <a href="">bông tai(13)</a>
+                                <a href="/bongtai">bông tai(13)</a>
                             </h1>
                             <h1 className="mt-2">
-                                <a href="">sản phẩm hót(13)</a>
+                                <a href="/khuyenmai">sản phẩm hót(13)</a>
                             </h1>
                         </span>
                         <spanPrise>
@@ -446,7 +442,11 @@ function Weddingring() {
                             </div>
                         </span>
                         <spanBenner>
-                            <img src="/src/assets/benner/bennersanpham.jpg" alt="" className='mt-5' />
+                            <img
+                                src="/src/assets/benner/bennersanpham.jpg"
+                                alt=""
+                                className="mt-5"
+                            />
                         </spanBenner>
                     </spanCard>
                 </spanRaight>
@@ -737,28 +737,28 @@ function Weddingring() {
                                 ) : null}
                             </>
                         </div>
-                        
                     </div>
                     <div className="flex justify-center gap-6 ">
-                    {data &&
-    data.map((prd) => (
-        <Card
-            key={prd.id}
-            productName={prd.productName}
-            price={prd.price === 'liên hệ' ? prd.price : `${prd.price.toLocaleString('vi-VN')}đ`}
-            discountedPrice={
-                prd.discountedPrice
-                    ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
-                    : null
-            }
-        />
-    ))}
-
-
+                        {data &&
+                            data.map((prd) => (
+                                <Card
+                                    key={prd.id}
+                                    productName={prd.productName}
+                                    price={
+                                        prd.price === 'liên hệ'
+                                            ? prd.price
+                                            : `${prd.price.toLocaleString('vi-VN')}đ`
+                                    }
+                                    discountedPrice={
+                                        prd.discountedPrice
+                                            ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
+                                            : null
+                                    }
+                                />
+                            ))}
                     </div>
                     <div className="flex justify-center gap-6 mt-6  ">
                         <div>
-
                             <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal4(true)}
@@ -770,7 +770,7 @@ function Weddingring() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal4 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -850,7 +850,7 @@ function Weddingring() {
                             </>
                         </div>
                         <div>
-                        <NextUICard radius="none">
+                            <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal5(true)}
                                     isZoomed
@@ -861,7 +861,7 @@ function Weddingring() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal5 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -939,9 +939,9 @@ function Weddingring() {
                                     </>
                                 ) : null}
                             </>
-                        </div>  
+                        </div>
                         <div>
-                        <NextUICard radius="none">
+                            <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal6(true)}
                                     isZoomed
@@ -952,7 +952,7 @@ function Weddingring() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal6 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -1030,27 +1030,27 @@ function Weddingring() {
                                     </>
                                 ) : null}
                             </>
-                        </div>  
+                        </div>
                     </div>
                     <div className="flex justify-center gap-6 ">
-                    {data1 &&
-                        data1.map((prd) => (
-                            <Card
-                                key={prd.id}
-                                productName={prd.productName}
-                                price={`${prd.price.toLocaleString('vi-VN')}đ`}
-                                discountedPrice={
-                                    prd.discountedPrice
-                                        ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
-                                        : null
-                                }
-                            />
-                        ))}
+                        {data1 &&
+                            data1.map((prd) => (
+                                <Card
+                                    key={prd.id}
+                                    productName={prd.productName}
+                                    price={`${prd.price.toLocaleString('vi-VN')}đ`}
+                                    discountedPrice={
+                                        prd.discountedPrice
+                                            ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
+                                            : null
+                                    }
+                                />
+                            ))}
                     </div>
-                    
+
                     <div className="flex justify-center gap-6 mt-6  ">
                         <div>
-                        <NextUICard radius="none">
+                            <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal7(true)}
                                     isZoomed
@@ -1061,7 +1061,7 @@ function Weddingring() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal7 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -1141,7 +1141,7 @@ function Weddingring() {
                             </>
                         </div>
                         <div>
-                        <NextUICard radius="none">
+                            <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal8(true)}
                                     isZoomed
@@ -1152,7 +1152,7 @@ function Weddingring() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal8 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -1162,7 +1162,7 @@ function Weddingring() {
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
                                                         <h3 className="text-3xl font-semibold">
-                                                            Vòng Basic 
+                                                            Vòng Basic
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -1232,7 +1232,7 @@ function Weddingring() {
                             </>
                         </div>
                         <div>
-                        <NextUICard radius="none">
+                            <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal9(true)}
                                     isZoomed
@@ -1243,7 +1243,7 @@ function Weddingring() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal9 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -1325,20 +1325,20 @@ function Weddingring() {
                     </div>
 
                     <div className="flex justify-center gap-6 ">
-                    {data2 &&
-                        data2.map((prd) => (
-                            <Card
-                                key={prd.id}
-                                productName={prd.productName}
-                                price={`${prd.price.toLocaleString('vi-VN')}đ`}
-                                discountedPrice={
-                                    prd.discountedPrice
-                                        ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
-                                        : null
-                                }
-                            />
-                        ))}
-                    </div> 
+                        {data2 &&
+                            data2.map((prd) => (
+                                <Card
+                                    key={prd.id}
+                                    productName={prd.productName}
+                                    price={`${prd.price.toLocaleString('vi-VN')}đ`}
+                                    discountedPrice={
+                                        prd.discountedPrice
+                                            ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
+                                            : null
+                                    }
+                                />
+                            ))}
+                    </div>
                 </spanLeft>
             </spanBody>
         </div>

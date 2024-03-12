@@ -65,7 +65,7 @@ export default function Imgnews() {
                 </div>
 
                 <div className="flex justify-start gap-2 mt-2 font-light  text-red-500 ">
-                    <a href="/news">Đọc Tiếp</a>
+                    <a href="/baivietmau">Đọc Tiếp</a>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -143,7 +143,7 @@ export default function Imgnews() {
                     </p>
                     </div>
                     <div className="flex justify-start gap-2 mt-2 font-light  text-red-500">
-                    <a href="/news">Đọc Tiếp</a>
+                    <a href="/baivietmau2">Đọc Tiếp</a>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -222,7 +222,7 @@ export default function Imgnews() {
                     </p>
                     </div>
                     <div className="flex justify-start gap-2 mt-2 font-light  text-red-500">
-                    <a href="/news">Đọc Tiếp</a>
+                    <a href="/baivietmau3">Đọc Tiếp</a>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"

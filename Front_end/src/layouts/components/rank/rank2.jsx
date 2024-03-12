@@ -54,9 +54,7 @@ export default function Rank2() {
 
                                             <span>
                                                 <h1>Mã SP: Chưa cập nhật | Thương hiệu: Văn Dũng</h1>
-                                                <h1 className="text-red-500 text-xl font-semibold">
-                                                    Liên hệ
-                                                </h1>
+                                               <a className="text-red-500 text-xl font-semibold" href="/contact">Liên Hệ </a>
                                                 <h1 style={{ width: '450px' }}>
                                                     Sterling silver (hợp kim bạc 925) là loại hợp
                                                     kim sáng nhất. Bạc tinh khiết quá mềm để làm đồ

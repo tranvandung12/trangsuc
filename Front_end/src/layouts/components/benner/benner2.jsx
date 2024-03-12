@@ -29,7 +29,7 @@ export default function Benner2() {
                     after:!duration-500 hover:after:scale-150 hover:after:opacity-0"
                     size="lg"
                 >
-                    <a href="">Mua ngay</a>
+                    <a href="/khuyenmai">Mua ngay</a>
                 </Button>
             </div>
         </div>

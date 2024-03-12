@@ -41,7 +41,7 @@ export default function Rankdocument2() {
                             />
                         </svg>
                     </a>
-                  liên hệ
+                 <a href="/contact"> liên hệ</a>
                 </span>
             </span>
                     {data &&

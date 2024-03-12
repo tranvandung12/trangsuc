@@ -14,7 +14,6 @@ import { Card } from '../../components/card/card';
 import { Input } from '@nextui-org/react';
 import { useState } from 'react';
 
-
 function Promotional() {
     const data = [
         {
@@ -26,7 +25,6 @@ function Promotional() {
             id: 2,
             productName: 'Bông Tai Phá Cách ',
             price: 350000,
-            
         },
         {
             id: 3,
@@ -61,14 +59,12 @@ function Promotional() {
             id: 8,
             productName: 'Bông Tai Cao Cấp',
             price: 400000,
-            
         },
         {
             id: 9,
             productName: 'Nhẫn Tình Yêu',
             price: 900000,
         },
-    
     ];
     const data3 = [
         {
@@ -80,14 +76,12 @@ function Promotional() {
             id: 8,
             productName: 'Nhẫn Vàng Cao Cấp',
             price: 100000,
-            
         },
         {
             id: 9,
             productName: 'Vòng Tay Cao Cấp',
             price: 400000,
         },
-    
     ];
     const data4 = [
         {
@@ -95,7 +89,6 @@ function Promotional() {
             productName: 'Nhẫn Ngọc Trai Cao Cấp ',
             price: 500000,
         },
-      
     ];
     const [showModal, setShowModal] = React.useState(false);
     const [showModal3, setShowModal3] = React.useState(false);
@@ -146,9 +139,9 @@ function Promotional() {
     const handleClick4 = (index) => {
         setSelected(index === selected ? null : index);
     };
-    
+
     return (
-        <div className='px-5'>
+        <div className="px-5">
             <spanBody className="flex flex-col md:flex-row  justify-center  gap-10 mt-6">
                 <spanRaight>
                     <div className="flex rounded-lg  ">
@@ -177,16 +170,16 @@ function Promotional() {
                         <span>
                             <h1 className="text-xl font-semibold mt-10">Danh mục</h1>
                             <h1 className="mt-2">
-                                <a href="">vòng tay(10)</a>
+                                <a href="/vòngtay">vòng tay(10)</a>
                             </h1>
                             <h1 className="mt-2">
-                                <a href="">dây chuyền(8)</a>
+                                <a href="/daychuyen">dây chuyền(8)</a>
                             </h1>
                             <h1 className="mt-2">
-                                <a href="">bông tai(13)</a>
+                                <a href="/bongtai">bông tai(13)</a>
                             </h1>
                             <h1 className="mt-2">
-                                <a href="">sản phẩm hót(13)</a>
+                                <a href="/khuyenmai">sản phẩm hót(13)</a>
                             </h1>
                         </span>
                         <spanPrise>
@@ -473,7 +466,11 @@ function Promotional() {
                             </div>
                         </span>
                         <spanBenner>
-                            <img src="/src/assets/benner/bennersanpham.jpg" alt="" className='mt-5' />
+                            <img
+                                src="/src/assets/benner/bennersanpham.jpg"
+                                alt=""
+                                className="mt-5"
+                            />
                         </spanBenner>
                     </spanCard>
                 </spanRaight>
@@ -695,7 +692,7 @@ function Promotional() {
                                                     {/*header*/}
                                                     <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
                                                         <h3 className="text-3xl font-semibold">
-                                                            Vòng Basic 
+                                                            Vòng Basic
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -764,26 +761,24 @@ function Promotional() {
                                 ) : null}
                             </>
                         </div>
-                        
                     </div>
                     <div className="flex justify-center gap-6 ">
-                    {data &&
-                        data.map((prd) => (
-                            <Card
-                                key={prd.id}
-                                productName={prd.productName}
-                                price={`${prd.price.toLocaleString('vi-VN')}đ`}
-                                discountedPrice={
-                                    prd.discountedPrice
-                                        ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
-                                        : null
-                                }
-                            />
-                        ))}
+                        {data &&
+                            data.map((prd) => (
+                                <Card
+                                    key={prd.id}
+                                    productName={prd.productName}
+                                    price={`${prd.price.toLocaleString('vi-VN')}đ`}
+                                    discountedPrice={
+                                        prd.discountedPrice
+                                            ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
+                                            : null
+                                    }
+                                />
+                            ))}
                     </div>
                     <div className="flex justify-center gap-6 mt-6  ">
                         <div>
-
                             <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal4(true)}
@@ -795,7 +790,7 @@ function Promotional() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal4 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -875,7 +870,7 @@ function Promotional() {
                             </>
                         </div>
                         <div>
-                        <NextUICard radius="none">
+                            <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal5(true)}
                                     isZoomed
@@ -886,7 +881,7 @@ function Promotional() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal5 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -964,9 +959,9 @@ function Promotional() {
                                     </>
                                 ) : null}
                             </>
-                        </div>  
+                        </div>
                         <div>
-                        <NextUICard radius="none">
+                            <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal6(true)}
                                     isZoomed
@@ -977,7 +972,7 @@ function Promotional() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal6 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -1055,27 +1050,27 @@ function Promotional() {
                                     </>
                                 ) : null}
                             </>
-                        </div>  
+                        </div>
                     </div>
                     <div className="flex justify-center gap-6 ">
-                    {data1 &&
-                        data1.map((prd) => (
-                            <Card
-                                key={prd.id}
-                                productName={prd.productName}
-                                price={`${prd.price.toLocaleString('vi-VN')}đ`}
-                                discountedPrice={
-                                    prd.discountedPrice
-                                        ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
-                                        : null
-                                }
-                            />
-                        ))}
+                        {data1 &&
+                            data1.map((prd) => (
+                                <Card
+                                    key={prd.id}
+                                    productName={prd.productName}
+                                    price={`${prd.price.toLocaleString('vi-VN')}đ`}
+                                    discountedPrice={
+                                        prd.discountedPrice
+                                            ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
+                                            : null
+                                    }
+                                />
+                            ))}
                     </div>
-                    
+
                     <div className="flex justify-center gap-6 mt-6  ">
                         <div>
-                        <NextUICard radius="none">
+                            <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal7(true)}
                                     isZoomed
@@ -1086,7 +1081,7 @@ function Promotional() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal7 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -1166,7 +1161,7 @@ function Promotional() {
                             </>
                         </div>
                         <div>
-                        <NextUICard radius="none">
+                            <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal8(true)}
                                     isZoomed
@@ -1177,7 +1172,7 @@ function Promotional() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal8 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -1257,7 +1252,7 @@ function Promotional() {
                             </>
                         </div>
                         <div>
-                        <NextUICard radius="none">
+                            <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal9(true)}
                                     isZoomed
@@ -1268,7 +1263,7 @@ function Promotional() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal9 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -1350,25 +1345,24 @@ function Promotional() {
                     </div>
 
                     <div className="flex justify-center gap-6 ">
-                    {data2 &&
-                        data2.map((prd) => (
-                            <Card
-                                key={prd.id}
-                                productName={prd.productName}
-                                price={`${prd.price.toLocaleString('vi-VN')}đ`}
-                                discountedPrice={
-                                    prd.discountedPrice
-                                        ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
-                                        : null
-                                }
-                            />
-                        ))}
+                        {data2 &&
+                            data2.map((prd) => (
+                                <Card
+                                    key={prd.id}
+                                    productName={prd.productName}
+                                    price={`${prd.price.toLocaleString('vi-VN')}đ`}
+                                    discountedPrice={
+                                        prd.discountedPrice
+                                            ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
+                                            : null
+                                    }
+                                />
+                            ))}
                     </div>
-                    
 
                     <div className="flex justify-center gap-6 mt-6  ">
                         <div>
-                        <NextUICard radius="none">
+                            <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal7(true)}
                                     isZoomed
@@ -1379,7 +1373,7 @@ function Promotional() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal7 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -1459,7 +1453,7 @@ function Promotional() {
                             </>
                         </div>
                         <div>
-                        <NextUICard radius="none">
+                            <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal8(true)}
                                     isZoomed
@@ -1470,7 +1464,7 @@ function Promotional() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal8 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -1550,7 +1544,7 @@ function Promotional() {
                             </>
                         </div>
                         <div>
-                        <NextUICard radius="none">
+                            <NextUICard radius="none">
                                 <Image
                                     onClick={() => setShowModal9(true)}
                                     isZoomed
@@ -1561,7 +1555,7 @@ function Promotional() {
                                     className="w-60 h-60  drop-shadow-2xl "
                                 />
                             </NextUICard>
-                              <>
+                            <>
                                 {showModal9 ? (
                                     <>
                                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -1643,129 +1637,126 @@ function Promotional() {
                     </div>
 
                     <div className="flex justify-center gap-6 ">
-                    {data3 &&
-                        data3.map((prd) => (
-                            <Card
-                                key={prd.id}
-                                productName={prd.productName}
-                                price={`${prd.price.toLocaleString('vi-VN')}đ`}
-                                discountedPrice={
-                                    prd.discountedPrice
-                                        ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
-                                        : null
-                                }
-                            />
-                        ))}
+                        {data3 &&
+                            data3.map((prd) => (
+                                <Card
+                                    key={prd.id}
+                                    productName={prd.productName}
+                                    price={`${prd.price.toLocaleString('vi-VN')}đ`}
+                                    discountedPrice={
+                                        prd.discountedPrice
+                                            ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
+                                            : null
+                                    }
+                                />
+                            ))}
                     </div>
 
-
-                    <div className='w-60 h-60 mt-6 '>
-                    <NextUICard radius="none">
-                                <Image
-                                    onClick={() => setShowModal10(true)}
-                                    isZoomed
-                                    radius="none"
-                                    width={240}
-                                    alt="NextUI Fruit Image with Zoom"
-                                    src="/src/assets/rank2/nhanngoctrai.jpg  "
-                                    className="w-60 h-60 drop-shadow-2xl "
-                                />
-                            </NextUICard>
-                            <>
-                                {showModal10 ? (
-                                    <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
-                                            <div className="relative w-auto my-6 mx-auto max-w-3xl">
-                                                {/*content*/}
-                                                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                                                    {/*header*/}
-                                                    <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
-                                                           Nhẫn Ngọc Trai Cao Cấp
-                                                        </h3>
-                                                        <button
-                                                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                                                            onClick={() => setShowModal10(false)}
-                                                        >
-                                                            <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
-                                                                ×
-                                                            </span>
-                                                        </button>
-                                                    </div>
-                                                    {/*body*/}
-                                                    <div className="relative p-6 flex justify-center gap-3">
-                                                        <span>
-                                                            <img
-                                                                src="/src/assets/rank2/nhanngoctrai.jpg "
-                                                                alt=""
-                                                                style={{
-                                                                    width: '250px',
-                                                                    height: '250px',
-                                                                }}
-                                                            />
+                    <div className="w-60 h-60 mt-6 ">
+                        <NextUICard radius="none">
+                            <Image
+                                onClick={() => setShowModal10(true)}
+                                isZoomed
+                                radius="none"
+                                width={240}
+                                alt="NextUI Fruit Image with Zoom"
+                                src="/src/assets/rank2/nhanngoctrai.jpg  "
+                                className="w-60 h-60 drop-shadow-2xl "
+                            />
+                        </NextUICard>
+                        <>
+                            {showModal10 ? (
+                                <>
+                                    <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                                            {/*content*/}
+                                            <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                                {/*header*/}
+                                                <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
+                                                    <h3 className="text-3xl font-semibold">
+                                                        Nhẫn Ngọc Trai Cao Cấp
+                                                    </h3>
+                                                    <button
+                                                        className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                                        onClick={() => setShowModal10(false)}
+                                                    >
+                                                        <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                                            ×
                                                         </span>
+                                                    </button>
+                                                </div>
+                                                {/*body*/}
+                                                <div className="relative p-6 flex justify-center gap-3">
+                                                    <span>
+                                                        <img
+                                                            src="/src/assets/rank2/nhanngoctrai.jpg "
+                                                            alt=""
+                                                            style={{
+                                                                width: '250px',
+                                                                height: '250px',
+                                                            }}
+                                                        />
+                                                    </span>
 
-                                                        <span>
-                                                            <h1>
-                                                                Mã SP: Chưa cập nhật | Thương hiệu:
-                                                                Ngân Hoàng
-                                                            </h1>
-                                                            <h1 className="text-red-500 text-xl font-semibold">
-                                                                500.000₫{' '}
-                                                            </h1>
-                                                            <h1 style={{ width: '450px' }}>
-                                                                Sterling silver (hợp kim bạc 925) là
-                                                                loại hợp kim sáng nhất. Bạc tinh
-                                                                khiết quá mềm để làm đồ trang sức,
-                                                                vì vậy người ta thường pha hợp kim
-                                                                đồng hoặc các kim loại khác để làm
-                                                                cho nó đủ cứng và dễ tạo độ bóng.
-                                                                Trong những năm gần đây, việc pha
-                                                                kim loại khác còn nhằm tác...{' '}
-                                                            </h1>
-                                                        </span>
-                                                    </div>
-                                                    {/*footer*/}
-                                                    <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
-                                                        <button
-                                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                                                            type="button"
-                                                            onClick={() => setShowModal10(false)}
-                                                        >
-                                                            Close
-                                                        </button>
-                                                        <button
-                                                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                                                            type="button"
-                                                            onClick={() => setShowModal10(false)}
-                                                        >
-                                                            Thêm Vào Giỏ Hàng
-                                                        </button>
-                                                    </div>
+                                                    <span>
+                                                        <h1>
+                                                            Mã SP: Chưa cập nhật | Thương hiệu: Ngân
+                                                            Hoàng
+                                                        </h1>
+                                                        <h1 className="text-red-500 text-xl font-semibold">
+                                                            500.000₫{' '}
+                                                        </h1>
+                                                        <h1 style={{ width: '450px' }}>
+                                                            Sterling silver (hợp kim bạc 925) là
+                                                            loại hợp kim sáng nhất. Bạc tinh khiết
+                                                            quá mềm để làm đồ trang sức, vì vậy
+                                                            người ta thường pha hợp kim đồng hoặc
+                                                            các kim loại khác để làm cho nó đủ cứng
+                                                            và dễ tạo độ bóng. Trong những năm gần
+                                                            đây, việc pha kim loại khác còn nhằm
+                                                            tác...{' '}
+                                                        </h1>
+                                                    </span>
+                                                </div>
+                                                {/*footer*/}
+                                                <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                                                    <button
+                                                        className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                        type="button"
+                                                        onClick={() => setShowModal10(false)}
+                                                    >
+                                                        Close
+                                                    </button>
+                                                    <button
+                                                        className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                        type="button"
+                                                        onClick={() => setShowModal10(false)}
+                                                    >
+                                                        Thêm Vào Giỏ Hàng
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-                                    </>
-                                ) : null}
-                            </>
-
-
+                                    </div>
+                                    <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                                </>
+                            ) : null}
+                        </>
                     </div>
                     <div className="flex w-60 h-60 gap-6 ">
-                    {data4 &&
-                        data4.map((prd) => (
-                            <Card
-                                key={prd.id}
-                                productName={prd.productName}
-                                price={`${prd.price.toLocaleString('vi-VN')}đ`}
-                                discountedPrice={
-                                    prd.discountedPrice
-                                        ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
-                                        : null
-                                }
-                            />
-                        ))}
+                        {data4 &&
+                            data4.map((prd) => (
+                                <Card
+                                    key={prd.id}
+                                    productName={prd.productName}
+                                    price={`${prd.price.toLocaleString('vi-VN')}đ`}
+                                    discountedPrice={
+                                        prd.discountedPrice
+                                            ? `${prd.discountedPrice.toLocaleString('vi-VN')}đ`
+                                            : null
+                                    }
+                                />
+                            ))}
                     </div>
                 </spanLeft>
             </spanBody>

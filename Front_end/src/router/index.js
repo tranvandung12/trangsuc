@@ -1,5 +1,5 @@
 import { DefaultLayout } from '../layouts';
-import { Home, Dashboard, Login, Signup,  Homepages, News, Bracelet, Contact, Agency, Seemore, Necklace, Earring, Promotional, introduce, Weddingring, Samplearticle, Samplearticle2, Samplearticle3,  } from '../pages';
+import { Home, Dashboard, Login, Signup,  Homepages, News, Bracelet, Contact, Agency, Seemore, Necklace, Earring, Promotional, introduce, Weddingring, Samplearticle, Samplearticle2, Samplearticle3, Allproducts,  } from '../pages';
 
 export const PuclicRoutes = [
     {
@@ -84,6 +84,12 @@ export const PuclicRoutes = [
     {
         path: '/baivietmau3',
         component: Samplearticle3,
+        layout: DefaultLayout,
+        isPrivate: false,
+    },
+    {
+        path: '/tatcasanpham',
+        component: Allproducts,
         layout: DefaultLayout,
         isPrivate: false,
     },

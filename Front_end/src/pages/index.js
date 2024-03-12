@@ -16,3 +16,4 @@ export { default as Weddingring} from './productinformation/weddingring';
 export { default as Samplearticle } from './samplearticle/samplearticle';
 export { default as Samplearticle2 } from './samplearticle/samplearticle2';
 export { default as Samplearticle3 } from './samplearticle/samplearticle3';
+export { default as Allproducts } from './productinformation/allproducts';

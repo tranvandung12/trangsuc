@@ -12,7 +12,7 @@ function News() {
                         <a href="/home">trang chủ</a>
                     </h1>
                     <h1 className="mt-3 text-x">
-                        <a href="">sản phẩm</a>
+                        <a href="/tatcasanpham">sản phẩm</a>
                     </h1>
                     <h1 className="mt-3 text-x">
                         <a href="/gioithieu">giới thiệu</a>

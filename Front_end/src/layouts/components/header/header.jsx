@@ -20,7 +20,7 @@ function Header() {
             <Navbar isBordered>
                 <NavbarContent justify="start flex-col ">
                     <NavbarBrand className="">
-                        <a href="/home">
+                        <a href="/">
                             <img
                                 src="https://bizweb.dktcdn.net/100/260/640/themes/801977/assets/logo.png?1676017321988"
                                 alt=""

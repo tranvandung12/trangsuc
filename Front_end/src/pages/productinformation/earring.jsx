@@ -175,18 +175,18 @@ function Earring() {
                     </div>
                     <spanCategory>
                         <span>
-                            <h1 className="text-xl font-semibold mt-10">Danh mục</h1>
+                        <h1 className="text-xl font-semibold mt-10">Danh mục</h1>
                             <h1 className="mt-2">
-                                <a href="">vòng tay(10)</a>
+                                <a href="/vòngtay">vòng tay(10)</a>
                             </h1>
                             <h1 className="mt-2">
-                                <a href="">dây chuyền(8)</a>
+                                <a href="/daychuyen">dây chuyền(8)</a>
                             </h1>
                             <h1 className="mt-2">
-                                <a href="">bông tai(13)</a>
+                                <a href="/bongtai">bông tai(13)</a>
                             </h1>
                             <h1 className="mt-2">
-                                <a href="">sản phẩm hót(13)</a>
+                                <a href="/khuyenmai">sản phẩm hót(13)</a>
                             </h1>
                         </span>
                         <spanPrise>
