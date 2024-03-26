@@ -19,7 +19,7 @@ import Document11 from '../../layouts/components/document/document11';
 import Header from '../../layouts/components/header/header';
 import Footer from '../../layouts/components/footer/footer';
 import Chatbox from '../../layouts/components/chat/chatbox';
-export default function Home1() {
+export default function Homepages() {
     return (
         <>
              <Header />

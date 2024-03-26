@@ -52,6 +52,9 @@ function Header() {
                                     <DropdownItem key="Dây Chuyền">
                                         <a href="/daychuyen">Dây Chuyền</a>
                                     </DropdownItem>
+                                    <DropdownItem key="Dây Chuyền">
+                                        <a href="/nhancuoi">Nhẫn Cưới</a>
+                                    </DropdownItem>
                                     <DropdownItem key="Bông Tai"><a href="/bongtai">Bông Tai</a></DropdownItem>
                                     <DropdownItem key="Đề cử"><a href="/khuyenmai">Sản Phẩm Hót</a></DropdownItem>
                                 </DropdownMenu>
@@ -132,7 +135,7 @@ function Header() {
                             </Dropdown>
                         </NavbarItem>
                         <NavbarItem className="mr-5 gap-5">
-                            <a href="/">
+                            <a href="/giohang">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"

@@ -508,13 +508,13 @@ function Earring() {
                             <>
                                 {showModal ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Bông Tai Phá Cách 
                                                         </h3>
                                                         <button
@@ -599,13 +599,13 @@ function Earring() {
                             <>
                                 {showModal2 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                                        <div onClick={() => setShowModal2(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Vòng Basic
                                                         </h3>
                                                         <button
@@ -688,13 +688,13 @@ function Earring() {
                             <>
                                 {showModal3 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                                        <div onClick={() => setShowModal3(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                            Vòng Cổ Đá Xanh
                                                         </h3>
                                                         <button
@@ -798,13 +798,13 @@ function Earring() {
                               <>
                                 {showModal4 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal4(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Dây Chuyền Số 8
                                                         </h3>
                                                         <button
@@ -889,13 +889,13 @@ function Earring() {
                               <>
                                 {showModal5 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal5(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Chìa Khóa Tình Yêu
                                                         </h3>
                                                         <button
@@ -980,13 +980,13 @@ function Earring() {
                               <>
                                 {showModal6 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal6(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Đôi Kim Cương
                                                         </h3>
                                                         <button
@@ -1089,13 +1089,13 @@ function Earring() {
                               <>
                                 {showModal7 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal7(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Bông Tai Phá Cách
                                                         </h3>
                                                         <button
@@ -1180,13 +1180,13 @@ function Earring() {
                               <>
                                 {showModal8 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal8(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Bông Tai Cao Cấp
                                                         </h3>
                                                         <button
@@ -1271,13 +1271,13 @@ function Earring() {
                               <>
                                 {showModal9 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal9(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Tình Nhân
                                                         </h3>
                                                         <button
@@ -1381,13 +1381,13 @@ function Earring() {
                               <>
                                 {showModal7 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal7(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Gắn Kim Cương
                                                         </h3>
                                                         <button
@@ -1472,13 +1472,13 @@ function Earring() {
                               <>
                                 {showModal8 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal8(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Vàng
                                                         </h3>
                                                         <button
@@ -1563,13 +1563,13 @@ function Earring() {
                               <>
                                 {showModal9 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal9(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                            Vòng Bạch Kim
                                                         </h3>
                                                         <button
@@ -1671,13 +1671,13 @@ function Earring() {
                             <>
                                 {showModal10 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal10(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                            Nhẫn Ngọc Trai
                                                         </h3>
                                                         <button
@@ -1736,7 +1736,7 @@ function Earring() {
                                                             type="button"
                                                             onClick={() => setShowModal10(false)}
                                                         >
-                                                            Thêm Vào Giỏ Hàng
+                                                            <a href="/contact">Liên Hệ</a>
                                                         </button>
                                                     </div>
                                                 </div>

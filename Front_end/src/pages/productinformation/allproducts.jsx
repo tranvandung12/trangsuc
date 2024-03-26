@@ -575,13 +575,13 @@ function Allproducts() {
                             <>
                                 {showModal ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Ngọc Trai 
                                                         </h3>
                                                         <button
@@ -666,13 +666,13 @@ function Allproducts() {
                             <>
                                 {showModal2 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                                        <div onClick={() => setShowModal2(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Vàng Đặc Biệt
                                                         </h3>
                                                         <button
@@ -755,13 +755,13 @@ function Allproducts() {
                             <>
                                 {showModal3 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                                        <div onClick={() => setShowModal3(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                            Nhẫn Tình Nhân
                                                         </h3>
                                                         <button
@@ -873,13 +873,13 @@ function Allproducts() {
                               <>
                                 {showModal4 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal4(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Gắn Kim Cuơng
                                                         </h3>
                                                         <button
@@ -964,13 +964,13 @@ function Allproducts() {
                               <>
                                 {showModal5 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal5(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Vòng Bạch Kim
                                                         </h3>
                                                         <button
@@ -1055,13 +1055,13 @@ function Allproducts() {
                               <>
                                 {showModal6 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal6(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Đôi Kim Cương
                                                         </h3>
                                                         <button
@@ -1164,13 +1164,13 @@ function Allproducts() {
                               <>
                                 {showModal7 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal7(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Bông Tai Phá Cách
                                                         </h3>
                                                         <button
@@ -1255,13 +1255,13 @@ function Allproducts() {
                               <>
                                 {showModal8 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal8(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                            Vòng Basic
                                                         </h3>
                                                         <button
@@ -1346,13 +1346,13 @@ function Allproducts() {
                               <>
                                 {showModal9 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal9(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                            Vòng Cổ Đá Xanh
                                                         </h3>
                                                         <button
@@ -1456,13 +1456,13 @@ function Allproducts() {
                               <>
                                 {showModal10 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal10(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Dây Chuyền Số 8
                                                         </h3>
                                                         <button
@@ -1547,13 +1547,13 @@ function Allproducts() {
                               <>
                                 {showModal11 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal11(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Chìa Khóa Tình Yêu
                                                         </h3>
                                                         <button
@@ -1638,13 +1638,13 @@ function Allproducts() {
                               <>
                                 {showModal12 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal12(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                           Nhẫn Đôi Kim Cuơng
                                                         </h3>
                                                         <button
@@ -1747,13 +1747,13 @@ function Allproducts() {
                               <>
                                 {showModal13 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal13(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Bông Tai Ngọc Trai
                                                         </h3>
                                                         <button
@@ -1838,13 +1838,13 @@ function Allproducts() {
                               <>
                                 {showModal14 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal14(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Bông Tai Cao Cấp
                                                         </h3>
                                                         <button
@@ -1929,13 +1929,13 @@ function Allproducts() {
                               <>
                                 {showModal15 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal15(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                            Nhẫn Tình Yêu
                                                         </h3>
                                                         <button
@@ -2037,13 +2037,13 @@ function Allproducts() {
                               <>
                                 {showModal16 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal16(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Gắn Kim Cương Cao Cấp
                                                         </h3>
                                                         <button
@@ -2128,13 +2128,13 @@ function Allproducts() {
                               <>
                                 {showModal17 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal17(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Vàng
                                                         </h3>
                                                         <button
@@ -2219,13 +2219,13 @@ function Allproducts() {
                               <>
                                 {showModal18 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal18(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                            Vòng Bạch Kim
                                                         </h3>
                                                         <button
@@ -2329,13 +2329,13 @@ function Allproducts() {
                               <>
                                 {showModal19 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal19(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Ngọc Trai
                                                         </h3>
                                                         <button
@@ -2420,13 +2420,13 @@ function Allproducts() {
                               <>
                                 {showModal20 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal20(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Bông Tai Cao Cấp BIZ
                                                         </h3>
                                                         <button
@@ -2511,13 +2511,13 @@ function Allproducts() {
                               <>
                                 {showModal21 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal21(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                            Nhẫn Vòng ADV
                                                         </h3>
                                                         <button

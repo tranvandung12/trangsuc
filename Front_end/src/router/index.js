@@ -1,4 +1,5 @@
 import { DefaultLayout } from '../layouts';
+import ShoppingCart from '../layouts/components/cart/ShoppingCart';
 import { Home, Dashboard, Login, Signup,  Homepages, News, Bracelet, Contact, Agency, Seemore, Necklace, Earring, Promotional, introduce, Weddingring, Samplearticle, Samplearticle2, Samplearticle3, Allproducts,  } from '../pages';
 
 export const PuclicRoutes = [
@@ -15,12 +16,20 @@ export const PuclicRoutes = [
         layout: DefaultLayout,
         isPrivate: false,
     },
+    
     {
         path: '/contact',
         component: Contact,
         layout: DefaultLayout,
         isPrivate: false,
     },
+    {
+        path: '/giohang',
+        component: ShoppingCart,
+        layout: DefaultLayout,
+        isPrivate: false,
+    },
+  
     {
         path: '/login',
         component: Login,
@@ -51,6 +60,7 @@ export const PuclicRoutes = [
         layout: DefaultLayout,
         isPrivate: false,
     },
+ 
     {
         path: '/khuyenmai',
         component: Promotional,
@@ -111,7 +121,7 @@ export const PuclicRoutes = [
         layout: Signup,
         isPrivate: false,
     },
-   
+  
    
 ];
 export const PrivateRoutes = [

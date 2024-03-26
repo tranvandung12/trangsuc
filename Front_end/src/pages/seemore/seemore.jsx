@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import './seemore.css';
 import moment from 'moment';
 import ReactImageMagnify from 'react-image-magnify';
-
 function Seemore() {
     const [showModal, setShowModal] = React.useState(false);
     const [showModal3, setShowModal3] = React.useState(false);
@@ -13,9 +12,9 @@ function Seemore() {
     //chuyenanh//
     const [mainImage, setMainImage] = useState('/src/assets/rank2/nhanngoctrai.jpg');
 
-    const handleThumbnailClick = (imageSrc) => {
-        setMainImage(imageSrc);
-    };
+  const handleThumbnailClick = (imageSrc) => {
+    setMainImage(imageSrc);
+  };
 
     //binhluan//
     const [comments, setComments] = useState({});
@@ -51,24 +50,25 @@ function Seemore() {
         <div>
             <spanBody className="flex-col">
                 <span className="flex justify-center gap-7 mt-10">
-                    <span >
-                            <ReactImageMagnify 
-                                {...{
-                                    smallImage: {
-                                        alt: '',
-                                        isFluidWidth: false,
-                                        src: mainImage,
-                                        width: 360, // Độ rộng mong muốn của ảnh nhỏ
-                                        height: 360,
-                                    },
-                                    largeImage: {
-                                        src: mainImage,
-                                        width:500, // Kích thước của ảnh lớn khi zoom
-                                        height: 1000,
-                                    },
-                                    lensStyle: { backgroundColor: 'rgba(0,0,0,.6)' },
-                                }}
-                            />
+                    <span className="">
+                        <ReactImageMagnify
+                            {...{
+                                smallImage: {
+                                    alt: '',
+                                    isFluidWidth: false,
+                                    src: mainImage,
+                                    width: 360,
+                                    height: 360,
+                                },
+                                largeImage: {
+                                    src: mainImage,
+                                    width: 500,
+                                    height: 900,
+                                },
+                                lensStyle: { backgroundColor: 'rgba(0,0,0,.8)' }, // Adjust opacity here for desired darkness
+                                enlargedImageContainerStyle: { backgroundColor: '#EFECEC' }, // Added style for black background
+                            }}
+                        />
 
                         <span className="flex gap-3 mt-3">
                             <img

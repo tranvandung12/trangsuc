@@ -1,0 +1,51 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "bach kim",
+      "brand": "Nhẫn Ngọc Trai",
+      "price": "300.000"
+    },
+    {
+      "id": "2",
+      "name": "Vàng",
+      "brand": "Nhẫn Vàng Đặc Biệt",
+      "price": "400.000"
+    },
+    {
+      "id": "3",
+      "name": "Bạc",
+      "brand": "Nhẫn Tình Nhân",
+      "price": "700.000"
+    },
+    {
+      "id": "4",
+      "name": "Kim Cương",
+      "brand": "Bông Tai Phá Cách",
+      "price": "700.000"
+    },
+    {
+      "id": "5",
+      "name": "Bạch Kim",
+      "brand": "Vòng Bạch Kim",
+      "price": "500.000"
+    }
+  ],
+  "users": [
+    {
+      "id": "2",
+      "name": "Vàng Nhớ",
+      "company": "VietNam lot"
+    },
+    {
+      "id": "4",
+      "name": "Vàng Quốc",
+      "company": "VietNam oki"
+    },
+    {
+      "name": "vàng tây",
+      "company": "vietnam",
+      "id": "Q42Rx5x"
+    }
+  ]
+}

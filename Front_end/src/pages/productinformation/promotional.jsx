@@ -100,6 +100,9 @@ function Promotional() {
     const [showModal8, setShowModal8] = React.useState(false);
     const [showModal9, setShowModal9] = React.useState(false);
     const [showModal10, setShowModal10] = React.useState(false);
+    const [showModal11, setShowModal11] = React.useState(false);
+    const [showModal12, setShowModal12] = React.useState(false);
+    const [showModal13, setShowModal13] = React.useState(false);
     const [selectedColor, setSelectedColor] = useState(null);
 
     const handleColorSelection = (color) => {
@@ -505,13 +508,13 @@ function Promotional() {
                             <>
                                 {showModal ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Vòng Tình Nhân
                                                         </h3>
                                                         <button
@@ -596,13 +599,13 @@ function Promotional() {
                             <>
                                 {showModal2 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                                        <div onClick={() => setShowModal2(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Bông Tai Phá Cách
                                                         </h3>
                                                         <button
@@ -685,13 +688,13 @@ function Promotional() {
                             <>
                                 {showModal3 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                                        <div onClick={() => setShowModal3(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Vòng Basic
                                                         </h3>
                                                         <button
@@ -793,13 +796,13 @@ function Promotional() {
                             <>
                                 {showModal4 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal4(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Dây Chuyền Số 8
                                                         </h3>
                                                         <button
@@ -884,13 +887,13 @@ function Promotional() {
                             <>
                                 {showModal5 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal5(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Chìa Khóa Tình Yêu
                                                         </h3>
                                                         <button
@@ -975,13 +978,13 @@ function Promotional() {
                             <>
                                 {showModal6 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal6(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Đôi Kim Cương
                                                         </h3>
                                                         <button
@@ -1084,13 +1087,13 @@ function Promotional() {
                             <>
                                 {showModal7 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal7(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Bông Tai Ngọc Trai
                                                         </h3>
                                                         <button
@@ -1175,13 +1178,13 @@ function Promotional() {
                             <>
                                 {showModal8 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal8(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Bông Tai Cao Cấp
                                                         </h3>
                                                         <button
@@ -1266,13 +1269,13 @@ function Promotional() {
                             <>
                                 {showModal9 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal9(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Tình Yêu
                                                         </h3>
                                                         <button
@@ -1364,7 +1367,7 @@ function Promotional() {
                         <div>
                             <NextUICard radius="none">
                                 <Image
-                                    onClick={() => setShowModal7(true)}
+                                    onClick={() => setShowModal10(true)}
                                     isZoomed
                                     radius="none"
                                     width={240}
@@ -1374,20 +1377,20 @@ function Promotional() {
                                 />
                             </NextUICard>
                             <>
-                                {showModal7 ? (
+                                {showModal10 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal10(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Gắn Kim Cương Cao Cap
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                                                            onClick={() => setShowModal7(false)}
+                                                            onClick={() => setShowModal10(false)}
                                                         >
                                                             <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                                                                 ×
@@ -1432,14 +1435,14 @@ function Promotional() {
                                                         <button
                                                             className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                                             type="button"
-                                                            onClick={() => setShowModal7(false)}
+                                                            onClick={() => setShowModal10(false)}
                                                         >
                                                             Close
                                                         </button>
                                                         <button
                                                             className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                                             type="button"
-                                                            onClick={() => setShowModal7(false)}
+                                                            onClick={() => setShowModal10(false)}
                                                         >
                                                             Thêm Vào Giỏ Hàng
                                                         </button>
@@ -1455,7 +1458,7 @@ function Promotional() {
                         <div>
                             <NextUICard radius="none">
                                 <Image
-                                    onClick={() => setShowModal8(true)}
+                                    onClick={() => setShowModal11(true)}
                                     isZoomed
                                     radius="none"
                                     width={240}
@@ -1465,20 +1468,20 @@ function Promotional() {
                                 />
                             </NextUICard>
                             <>
-                                {showModal8 ? (
+                                {showModal11 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal11(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Vàng Cao Cấp
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                                                            onClick={() => setShowModal8(false)}
+                                                            onClick={() => setShowModal11(false)}
                                                         >
                                                             <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                                                                 ×
@@ -1523,14 +1526,14 @@ function Promotional() {
                                                         <button
                                                             className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                                             type="button"
-                                                            onClick={() => setShowModal8(false)}
+                                                            onClick={() => setShowModal11(false)}
                                                         >
                                                             Close
                                                         </button>
                                                         <button
                                                             className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                                             type="button"
-                                                            onClick={() => setShowModal8(false)}
+                                                            onClick={() => setShowModal11(false)}
                                                         >
                                                             Thêm Vào Giỏ Hàng
                                                         </button>
@@ -1546,7 +1549,7 @@ function Promotional() {
                         <div>
                             <NextUICard radius="none">
                                 <Image
-                                    onClick={() => setShowModal9(true)}
+                                    onClick={() => setShowModal12(true)}
                                     isZoomed
                                     radius="none"
                                     width={240}
@@ -1556,20 +1559,20 @@ function Promotional() {
                                 />
                             </NextUICard>
                             <>
-                                {showModal9 ? (
+                                {showModal12 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal12(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Vòng Tay Cao Cấp
                                                         </h3>
                                                         <button
                                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                                                            onClick={() => setShowModal9(false)}
+                                                            onClick={() => setShowModal12(false)}
                                                         >
                                                             <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                                                                 ×
@@ -1614,14 +1617,14 @@ function Promotional() {
                                                         <button
                                                             className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                                             type="button"
-                                                            onClick={() => setShowModal9(false)}
+                                                            onClick={() => setShowModal12(false)}
                                                         >
                                                             Close
                                                         </button>
                                                         <button
                                                             className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                                             type="button"
-                                                            onClick={() => setShowModal9(false)}
+                                                            onClick={() => setShowModal12(false)}
                                                         >
                                                             Thêm Vào Giỏ Hàng
                                                         </button>
@@ -1655,7 +1658,7 @@ function Promotional() {
                     <div className="w-60 h-60 mt-6 ">
                         <NextUICard radius="none">
                             <Image
-                                onClick={() => setShowModal10(true)}
+                                onClick={() => setShowModal13(true)}
                                 isZoomed
                                 radius="none"
                                 width={240}
@@ -1665,20 +1668,20 @@ function Promotional() {
                             />
                         </NextUICard>
                         <>
-                            {showModal10 ? (
+                            {showModal13 ? (
                                 <>
-                                    <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                    <div onClick={() => setShowModal13(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                         <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                             {/*content*/}
                                             <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                 {/*header*/}
                                                 <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                    <h3 className="text-3xl font-semibold">
+                                                    <h3 className="text-center flex-grow text-3xl font-semibold">
                                                         Nhẫn Ngọc Trai Cao Cấp
                                                     </h3>
                                                     <button
                                                         className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                                                        onClick={() => setShowModal10(false)}
+                                                        onClick={() => setShowModal13(false)}
                                                     >
                                                         <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                                                             ×
@@ -1723,14 +1726,14 @@ function Promotional() {
                                                     <button
                                                         className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                                         type="button"
-                                                        onClick={() => setShowModal10(false)}
+                                                        onClick={() => setShowModal13(false)}
                                                     >
                                                         Close
                                                     </button>
                                                     <button
                                                         className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                                         type="button"
-                                                        onClick={() => setShowModal10(false)}
+                                                        onClick={() => setShowModal13(false)}
                                                     >
                                                         Thêm Vào Giỏ Hàng
                                                     </button>

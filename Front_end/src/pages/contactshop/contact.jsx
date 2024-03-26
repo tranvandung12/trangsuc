@@ -2,7 +2,6 @@
 /* eslint-disable no-unused-vars */
 import { Button } from '@nextui-org/react';
 import React from 'react';
-
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 function Contact() {
     return (

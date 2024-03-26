@@ -2,6 +2,8 @@ import { Image } from '@nextui-org/react';
 import React from 'react';
 
 export default function Rank2() {
+   
+    
     const [showModal, setShowModal] = React.useState(false);
     const [showModal3, setShowModal3] = React.useState(false);
     const [showModal2, setShowModal2] = React.useState(false);
@@ -21,13 +23,13 @@ export default function Rank2() {
                 <>
                     {showModal ? (
                         <>
-                            <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                            <div onClick={() => setShowModal(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                 <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                     {/*content*/}
                                     <div className=" border-0 rounded-lg shadow-lg relative flex  flex-col w-full bg-white outline-none focus:outline-none">
                                         {/*header*/}
                                         <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                            <h3 className=" flex justify-center text-3xl font-semibold">
+                                            <h3 className=" text-center flex-grow text-3xl font-semibold">
                                                 Nhẫn Ngọc Trai
                                             </h3>
                                             <button
@@ -75,11 +77,12 @@ export default function Rank2() {
                                                 Close
                                             </button>
                                             <button
-                                                className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                className="bg-red-400 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                                 type="button"
                                                 onClick={() => setShowModal(false)}
+                                                
                                             >
-                                                Thêm Vào Giỏ Hàng
+                                                <a href="/contact">Liên Hệ</a>
                                             </button>
                                         </div>
                                     </div>
@@ -104,14 +107,15 @@ export default function Rank2() {
                 <>
                     {showModal2 ? (
                         <>
-                            <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                            <div onClick={() => setShowModal2(false)}  className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none " >
+                               
                                 <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                     {/*content*/}
                                     <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                         {/*header*/}
                                         <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                            <h3 className="text-3xl font-semibold">
-                                                Vòng tay bạch kim
+                                            <h3 className="text-center flex-grow text-3xl font-semibold">
+                                                Nhẫn Vàng Đặc Biệt
                                             </h3>
                                             <button
                                                 className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -158,6 +162,7 @@ export default function Rank2() {
                                                 className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                                 type="button"
                                                 onClick={() => setShowModal2(false)}
+                                                
                                             >
                                                 Close
                                             </button>
@@ -166,7 +171,7 @@ export default function Rank2() {
                                                 type="button"
                                                 onClick={() => setShowModal2(false)}
                                             >
-                                                Thêm Vào Giỏ Hàng
+                                                Thêm vào Giỏ Hàng
                                             </button>
                                         </div>
                                     </div>
@@ -190,13 +195,13 @@ export default function Rank2() {
                 <>
                     {showModal3 ? (
                         <>
-                            <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                            <div onClick={() => setShowModal3(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                 <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                     {/*content*/}
                                     <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                         {/*header*/}
                                         <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                            <h3 className="text-3xl font-semibold">
+                                            <h3 className="text-center flex-grow text-3xl font-semibold">
                                                 Nhẫn tình nhân
                                             </h3>
                                             <button
@@ -277,13 +282,13 @@ export default function Rank2() {
                 <>
                     {showModal4 ? (
                         <>
-                            <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                            <div onClick={() => setShowModal4(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                 <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                     {/*content*/}
                                     <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                         {/*header*/}
                                         <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                            <h3 className="text-3xl font-semibold">
+                                            <h3 className="text-center flex-grow text-3xl font-semibold">
                                                 Nhẫn gắn kim cương
                                             </h3>
                                             <button

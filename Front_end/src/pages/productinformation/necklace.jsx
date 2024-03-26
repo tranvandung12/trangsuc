@@ -477,13 +477,13 @@ function Necklace() {
                             <>
                                 {showModal ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Vòng Cổ Đá Xanh
                                                         </h3>
                                                         <button
@@ -568,13 +568,13 @@ function Necklace() {
                             <>
                                 {showModal2 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                                        <div onClick={() => setShowModal2(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Tình Yêu
                                                         </h3>
                                                         <button
@@ -657,13 +657,13 @@ function Necklace() {
                             <>
                                 {showModal3 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                                        <div onClick={() => setShowModal3(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Gắn Kim Cương Cao Cấp
                                                         </h3>
                                                         <button
@@ -765,13 +765,13 @@ function Necklace() {
                             <>
                                 {showModal4 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal4(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Vàng Cao Cấp
                                                         </h3>
                                                         <button
@@ -856,13 +856,13 @@ function Necklace() {
                             <>
                                 {showModal5 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal5(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Vòng Tay Cao Cấp
                                                         </h3>
                                                         <button
@@ -947,13 +947,13 @@ function Necklace() {
                             <>
                                 {showModal6 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal6(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Ngọc Trai Cao Cấp
                                                         </h3>
                                                         <button
@@ -1056,13 +1056,13 @@ function Necklace() {
                             <>
                                 {showModal7 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal7(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Bông Tai Cao Cấp Biz
                                                         </h3>
                                                         <button
@@ -1147,13 +1147,13 @@ function Necklace() {
                             <>
                                 {showModal8 ? (
                                     <>
-                                        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+                                        <div onClick={() => setShowModal8(false)} className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
                                                 {/*content*/}
                                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                                     {/*header*/}
                                                     <div className="flex items-start justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                                        <h3 className="text-3xl font-semibold">
+                                                        <h3 className="text-center flex-grow text-3xl font-semibold">
                                                             Nhẫn Vòng ADV
                                                         </h3>
                                                         <button
